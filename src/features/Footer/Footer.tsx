@@ -1,10 +1,8 @@
 import { ActionIcon, Box, Flex, rem, Text } from '@mantine/core';
 import { IconBrandInstagram, IconBrandTwitter, IconBrandYoutube } from '@tabler/icons-react';
-// import { FaPhoneVolume } from 'react-icons/fa6';
-// import { IoMdMail } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 
-import MainLogo from '../../../features/MainLogo/MainLogo';
+import MainLogo from '../MainLogo/MainLogo';
 import classes from './FooterLinks.module.css';
 
 const data = [
@@ -70,11 +68,9 @@ export function FooterLinks() {
               Додаткові види зв &rsquo; язку
             </Text>
             <Flex>
-              {/* <IoMdMail /> */}
               <Text>ladclimatservice@gmail.com</Text>
             </Flex>
             <Box>
-              {/* <FaPhoneVolume /> */}
               <Link className={classes.link} to="/">
                 +380 (68) 947 87 23
               </Link>
@@ -105,7 +101,7 @@ export function FooterLinks() {
       </Flex>
       <Flex className={classes.afterFooter}>
         <Text c="dimmed" size="sm">
-          © 2019-2024 Працюємо по всій Україні та за її межами.
+          © 2019-2024 Працюємо по всій Україні
         </Text>
       </Flex>
     </footer>

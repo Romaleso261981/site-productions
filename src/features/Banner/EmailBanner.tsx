@@ -1,9 +1,8 @@
-import { Button, Flex, Text, TextInput, Title } from '@mantine/core';
+import { AspectRatio, Button, Flex, Text, TextInput, Title } from '@mantine/core';
 import { FaTelegramPlane, FaViber, FaWhatsapp } from 'react-icons/fa';
 
-import { CarouselCard } from './CarouselCard/CarouselCard';
+import image from '../../App/access/web-site/websaits-frames.jpg';
 import classes from './EmailBanner.module.css';
-// import image from './image.svg';
 
 export function EmailBanner() {
   const sendMessage = () => {
@@ -39,7 +38,7 @@ export function EmailBanner() {
             Замовити
           </Button>
         </Flex>
-        <Flex justify="flex-start" gap={20} align="center" direction="row">
+        <Flex className={classes.social}>
           <Title mt={30}>+380 (68) 947 87 23</Title>
           <Flex mt={20} gap={10} direction="row" justify="center">
             <FaTelegramPlane />
@@ -48,10 +47,11 @@ export function EmailBanner() {
           </Flex>
         </Flex>
       </div>
-      <Flex className={classes.slide}>
-        <CarouselCard />
-      </Flex>
-      {/* <Image src={image} className={classes.image} /> */}
+      <div className={classes.slide}>
+        <AspectRatio ratio={1080 / 720} maw={500} className={classes.heroImage}>
+          <img src={image} alt="Panda" />
+        </AspectRatio>
+      </div>
     </Flex>
   );
 }

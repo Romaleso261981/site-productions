@@ -1,16 +1,13 @@
-import { Autocomplete, Button, Flex, Group, rem } from '@mantine/core';
+import { Button, Flex, Group } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
-import { IconSearch } from '@tabler/icons-react';
-import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaPhoneVolume } from 'react-icons/fa6';
 import { IoMdMail } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 
 import { ADMIN } from '@/constans/constans';
-import { Basket } from '@/features';
 
-import MainLogo from '../../../features/MainLogo/MainLogo';
+import MainLogo from '../MainLogo/MainLogo';
 import classes from './HeaderSearch.module.css';
 
 const links = [
@@ -19,16 +16,7 @@ const links = [
 ];
 
 export function HeaderSearch() {
-  // const [opened, { toggle }] = useDisclosure(false);
-  const [isShowBasket, setIsShowBasket] = useState(false);
-
-  const matches = useMediaQuery('(min-width: 23.75em)');
-
   const { t } = useTranslation();
-
-  const toggleBasket = () => {
-    setIsShowBasket(!setIsShowBasket);
-  };
 
   const items = links.map((link) => (
     <Flex key={link.label}>
@@ -44,27 +32,19 @@ export function HeaderSearch() {
         <Group ml={40}>
           <MainLogo />
         </Group>
-        <Flex
-          gap={10}
-          align={useMediaQuery('(min-width: 75rem)') ? 'flex-start' : 'flex-start'}
-          direction="column">
-          <Group>
-            {matches && <IoMdMail />}
+        <Flex className={classes.list} direction="column">
+          <Flex gap={20}>
+            <IoMdMail />
             <Link className={classes.link} to="/">
               ladclimatservice@gmail.com
             </Link>
-          </Group>
+          </Flex>
           <Group>
             <FaPhoneVolume />
             <Link className={classes.link} to="/">
               +380 (68) 947 87 23
             </Link>
           </Group>
-          {/* <Center ml="auto" mr="auto">
-              {!useMediaQuery('(min-width: 420px)') && (
-                <Burger opened={opened} onClick={toggle} size="sm" />
-              )}
-            </Center> */}
         </Flex>
         <Flex
           gap={15}
@@ -80,20 +60,6 @@ export function HeaderSearch() {
             </Button>
           )}
         </Flex>
-        <Flex display="flex" direction="column">
-          <Autocomplete
-            className={classes.search}
-            placeholder="Search"
-            leftSection={<IconSearch style={{ width: rem(16), height: rem(16) }} stroke={1.5} />}
-            visibleFrom="xs"
-          />
-          {/* <Flex pt={15} justify="right" gap={10} visibleFrom="xs">
-            <IconBasket setIsShowBasket={toggleBasket} />
-            <LanguagePicker type="collapsed" />
-            <ColorSwitch />
-          </Flex> */}
-        </Flex>
-        <Basket setIsShowBasket={toggleBasket} opened={isShowBasket} />
       </div>
     </header>
   );

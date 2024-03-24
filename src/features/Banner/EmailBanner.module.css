@@ -6,8 +6,16 @@
   background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-8));
   border: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-8));
 }
-.wrapper .image {
-  max-width: 40%;
+.heroImage {
+  margin: 0 auto;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 1.25rem;
+  align-items: center;
 }
 
 .slide {
@@ -64,6 +72,10 @@
 
   .wrapper .image {
     max-width: 100%;
+  }
+
+  .social {
+    flex-direction: column;
   }
 
   .body {

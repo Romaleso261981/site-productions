@@ -1,7 +1,7 @@
 import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-import { Spiner } from '@/shared/components/Loader/Loader';
+import { Spiner } from '@/features/Loader/Loader';
 import { RoutersPaths } from '@/shared/types/enums';
 
 import { Layout } from './layout';

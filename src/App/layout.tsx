@@ -1,8 +1,7 @@
 import { Flex } from '@mantine/core';
 import { Outlet } from 'react-router-dom';
 
-import { FooterLinks } from '@/shared/components';
-import { HeaderSearch } from '@/shared/components/HeaderSearch/HeaderSearch';
+import { FooterLinks, HeaderSearch } from '@/features';
 
 import s from './App.module.css';
 

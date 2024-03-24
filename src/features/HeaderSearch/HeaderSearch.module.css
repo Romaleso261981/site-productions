@@ -16,6 +16,13 @@
   align-items: center;
 }
 
+.list {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  margin-left: 40px;
+}
+
 .link {
   display: block;
   line-height: 1;
@@ -29,4 +36,29 @@
 
 .link:hover {
   background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
+}
+
+@media (max-width: 48.125rem) {
+  .inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .list {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 25rem) {
+  .inner {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .list {
+    margin-top: 20px;
+  }
 }
