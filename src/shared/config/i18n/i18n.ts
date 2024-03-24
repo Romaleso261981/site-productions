@@ -5,6 +5,7 @@ import { initReactI18next } from 'react-i18next';
 
 import enTranslation from '@/locales/en/en.json';
 import ruTranslation from '@/locales/ru/ru.json';
+import uaTranslation from '@/locales/ua/ua.json';
 
 i18n
   .use(Backend)
@@ -24,6 +25,9 @@ i18n
       },
       ru: {
         translation: ruTranslation
+      },
+      ua: {
+        translation: uaTranslation
       }
     }
   });
