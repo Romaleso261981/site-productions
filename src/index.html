@@ -1,337 +1,398 @@
 <!DOCTYPE html>
-<html lang="ru">
-	@@include('_head.html',{
-	"title":"Funiro"
+<html lang="en">
+	@@include('html/_head.htm',{
+	"title":"HomePage"
 	})
 	<body>
-		<div class="wrapper">
-			@@include('_header.html',{})
+		<div data-fp class="wrapper">
+			@@include('html/_header.htm',{})
 			<main class="page">
-				<section class="page__main-slider main-slider">
-					<div class="main-slider__container _container">
-						<div class="main-slider__body">
-							<div class="main-slider__content content-main">
-								<h1 class="content-main__title">High-Quality Furniture Just For You</h1>
-								<div class="content-main__text">
-									Our furniture is made from selected and best quality materials that
-									are suitable for your dream home
-								</div>
-								<a href="" data-da=".main-slider__body,991.98" class="content-main__button btn">Shop Now</a>
+				<section data-fp-section class="page__main main-section">
+					<div class="main-section__container">
+						<div class="main-section__content">
+							<div class="main-section__title title">
+								<div class="title__label">MY NAME IS</div>
+								<h1 class="title__value title__value_big">Alex <span>Smith.</span></h1>
 							</div>
-							<div class="main-slider__slider slider-main">
-								<div class="slider-main__controls controls-slider-main">
-									<div class="controls-slider-main__dotts"></div>
-									<div class="controls-slider-main__arrows slider-arrows">
-										<button type="button" class="slider-arrow slider-arrow_prev _icon-arrow-down"></button>
-										<button type="button" class="slider-arrow slider-arrow_next _icon-arrow-down"></button>
-									</div>
+							<div class="main-section__text text">
+								<p>Creative front-end developer with more than +5 years of experience in enterprise companies and startups. Proficient in JavaScript, Angular, and React. Passionate about UI/UX</p>
+							</div>
+							<ul class="main-section__social social">
+								<li class="social__item">
+									<a href="" class="social__link _icon-s-instagram"></a>
+								</li>
+								<li class="social__item">
+									<a href="" class="social__link _icon-s-git"></a>
+								</li>
+								<li class="social__item">
+									<a href="" class="social__link _icon-s-twitter"></a>
+								</li>
+								<li class="social__item">
+									<a href="" class="social__link _icon-s-linkedin"></a>
+								</li>
+							</ul>
+						</div>
+						<div class="main-section__decor decor-main-section">
+							<div class="decor-main-section__box">
+								<div class="decor-main-section__image">
+									<img class="decor-main-section__picture" src="@img/main/picture.png" alt="Picture">
 								</div>
-								<div class="slider-main__body _swiper">
-									<div class="slider-main__slide">
-										<div class="slider-main__image _ibg">
-											<img src="img/main-slider/01.jpg" alt="Image">
-										</div>
-										<a href="" data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="slider-main__content">
-											<div class="slider-main__title">Bohauss</div>
-											<div class="slider-main__text">Luxury big sofa 2-seat</div>
-											<div class="slider-main__price _icon-arrow-link">Rp 17.000.000</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section data-fp-section class="page__services services">
+					<div class="services__container">
+						<div class="services__title title">
+							<div class="title__label">SERVICES</div>
+							<h2 class="title__value">Specialized in</h2>
+						</div>
+						<div class="services__items">
+							<article class="services__item item-service">
+								<div class="item-service__icon">
+									<img src="@img/services/icons/01.svg" alt="Icon">
+								</div>
+								<h4 class="item-service__title">UI/UX Design</h4>
+								<div class="item-service__text">Turn what you have in mind of a digital product into reality. For any platform you consider.</div>
+							</article>
+							<article class="services__item item-service">
+								<div class="item-service__icon">
+									<img src="@img/services/icons/02.svg" alt="Icon">
+								</div>
+								<h4 class="item-service__title">Application Development</h4>
+								<div class="item-service__text">Standard designing, building, and implementing your applications with documentation.</div>
+							</article>
+							<article class="services__item item-service">
+								<div class="item-service__icon">
+									<img src="@img/services/icons/03.svg" alt="Icon">
+								</div>
+								<h4 class="item-service__title">Web Development</h4>
+								<div class="item-service__text">Create and maintain your websites and also take care of its performance and traffic capacity.</div>
+							</article>
+						</div>
+					</div>
+				</section>
+				<section data-fp-section class="page__portfolio portfolio">
+					<div class="portfolio__container">
+						<div class="portfolio__header">
+							<div class="portfolio__title title">
+								<div class="title__label">MY WORKS</div>
+								<h2 class="title__value">Featured Portfolios</h2>
+							</div>
+							<div class="portfolio__controls">
+								<button type="button" class="portfolio__arrow portfolio__arrow_left _icon-slider-arrow"></button>
+								<button type="button" class="portfolio__arrow portfolio__arrow_right _icon-slider-arrow"></button>
+							</div>
+						</div>
+						<div class="portfolio__slider swiper">
+							<div class="portfolio__wrapper swiper-wrapper">
+								<div class="portfolio__slide swiper-slide">
+									<article class="item-portfolio">
+										<a href="" class="item-portfolio__image-ibg">
+											<img src="@img/portfolio/01.jpg" alt="Agency Website">
 										</a>
-									</div>
-									<div class="slider-main__slide">
-										<div class="slider-main__image _ibg">
-											<img src="img/main-slider/02.jpg" alt="Картинка слайда">
+										<div class="item-portfolio__body">
+											<h4 class="item-portfolio__title">
+												<a href="" class="item-portfolio__link-title">
+													Agency Website.
+												</a>
+											</h4>
+											<div class="item-portfolio__footer">
+												<a href="" class="item-portfolio__category category-link">WordPress</a>
+												<a href="" class="item-portfolio__link _icon-link"></a>
+											</div>
 										</div>
-										<a href="" data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="slider-main__content">
-											<div class="slider-main__title">Bohauss</div>
-											<div class="slider-main__text">Luxury big sofa 2-seat</div>
-											<div class="slider-main__price _icon-arrow-link">Rp 17.000.000</div>
+									</article>
+								</div>
+								<div class="portfolio__slide swiper-slide">
+									<article class="item-portfolio">
+										<a href="" class="item-portfolio__image-ibg">
+											<img src="@img/portfolio/02.jpg" alt="Agency Website">
 										</a>
-									</div>
-									<div class="slider-main__slide">
-										<div class="slider-main__image _ibg">
-											<img src="img/main-slider/03.jpg" alt="Картинка слайда">
+										<div class="item-portfolio__body">
+											<h4 class="item-portfolio__title">
+												<a href="" class="item-portfolio__link-title">
+													Dashboard Website.
+													Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora, ullam.
+												</a>
+											</h4>
+											<div class="item-portfolio__footer">
+												<a href="" class="item-portfolio__category category-link">React</a>
+												<a href="" class="item-portfolio__link _icon-link"></a>
+											</div>
 										</div>
-										<a href="" data-swiper-parallax-opacity="0" data-swiper-parallax-x="-100%" class="slider-main__content">
-											<div class="slider-main__title">Bohauss</div>
-											<div class="slider-main__text">Luxury big sofa 2-seat</div>
-											<div class="slider-main__price _icon-arrow-link">Rp 17.000.000</div>
+									</article>
+								</div>
+								<div class="portfolio__slide swiper-slide">
+									<article class="item-portfolio">
+										<a href="" class="item-portfolio__image-ibg">
+											<img src="@img/portfolio/03.jpg" alt="Agency Website">
 										</a>
-									</div>
+										<div class="item-portfolio__body">
+											<h4 class="item-portfolio__title">
+												<a href="" class="item-portfolio__link-title">Support Center Website.</a>
+											</h4>
+											<div class="item-portfolio__footer">
+												<a href="" class="item-portfolio__category category-link">PHP</a>
+												<a href="" class="item-portfolio__link _icon-link"></a>
+											</div>
+										</div>
+									</article>
+								</div>
+								<div class="portfolio__slide swiper-slide">
+									<article class="item-portfolio">
+										<a href="" class="item-portfolio__image-ibg">
+											<img src="@img/portfolio/02.jpg" alt="Agency Website">
+										</a>
+										<div class="item-portfolio__body">
+											<h4 class="item-portfolio__title">
+												<a href="" class="item-portfolio__link-title">Dashboard Website.</a>
+											</h4>
+											<div class="item-portfolio__footer">
+												<a href="" class="item-portfolio__category category-link">React</a>
+												<a href="" class="item-portfolio__link _icon-link"></a>
+											</div>
+										</div>
+									</article>
 								</div>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section class="page__advantages advantages">
-					<div class="advantages__container _container">
-						<div class="advantages__item">
-							<div class="advantages__icon">
-								<img src="img/advantages/01.svg" alt="High Quality">
+				<section data-fp-section class="page__career career">
+					<div data-tabs="768" class="career__container">
+						<div class="career__body">
+							<div class="career__title title">
+								<div class="title__label">career path</div>
+								<h2 class="title__value">Work Experices</h2>
 							</div>
-							<h3 class="advantages__title">High Quality</h3>
-							<div class="advantages__text">crafted from top materials</div>
-						</div>
-						<div class="advantages__item">
-							<div class="advantages__icon">
-								<img src="img/advantages/02.svg" alt="Warrany Protection">
-							</div>
-							<h3 class="advantages__title">Warrany Protection</h3>
-							<div class="advantages__text">Over 2 years</div>
-						</div>
-						<div class="advantages__item">
-							<div class="advantages__icon">
-								<img src="img/advantages/03.svg" alt="Free Shipping">
-							</div>
-							<h3 class="advantages__title">Free Shipping</h3>
-							<div class="advantages__text">Order over 150 $</div>
-						</div>
-						<div class="advantages__item">
-							<div class="advantages__icon">
-								<img src="img/advantages/04.svg" alt="24 / 7 Support">
-							</div>
-							<h3 class="advantages__title">24 / 7 Support</h3>
-							<div class="advantages__text">Dedicated support</div>
-						</div>
-					</div>
-				</section>
-				<section class="page__products products">
-					<div class="products__container _container">
-						<h2 class="products__title _title">Our Products</h2>
-						<div class="products__items">
-							<article data-pid="1" class="products__item item-product">
-								<div class="item-product__labels">
-									<div class="item-product__label item-product__label_sale">-30%</div>
-									<div class="item-product__label item-product__label_new">New</div>
-								</div>
-								<a href="" class="item-product__image _ibg">
-									<img src="img/products/01.jpg" alt="Syltherine">
-								</a>
-								<div class="item-product__body">
-									<div class="item-product__content">
-										<h3 class="item-product__title">Syltherine</h3>
-										<div class="item-product__text">Stylish cafe chair</div>
-									</div>
-									<div class="item-product__prices">
-										<div class="item-product__price">Rp 2.500.000</div>
-										<div class="item-product__price item-product__price_old">Rp 3.500.000</div>
-									</div>
-									<div class="item-product__actions actions-product">
-										<div class="actions-product__body">
-											<a href="" class="actions-product__button btn btn_white">Add to cart</a>
-											<a href="" class="actions-product__link _icon-share">Share</a>
-											<a href="" class="actions-product__link _icon-favorite">Like</a>
+							<nav data-tabs-titles class="career__navigation navigation-career">
+								<button type="button" class="navigation-career__title _tab-active">Apple</button>
+								<button type="button" class="navigation-career__title">Microsoft</button>
+								<button type="button" class="navigation-career__title">Facebook</button>
+								<button type="button" class="navigation-career__title">Slack</button>
+							</nav>
+							<div data-tabs-body class="career__content content-career">
+								<div class="content-career__body">
+									<div class="content-career__header">
+										<div class="content-career__title">Front-end Developer <a href="" class="content-career__link-title">Apple .Inc</a></div>
+										<div class="content-career__location">California, United States</div>
+										<div class="content-career__time">Nov 2020 - Present · Full-time</div>
+										<div class="content-career__categories">
+											<a href="" class="category-link">Swift</a>
+											<a href="" class="category-link">Go</a>
 										</div>
 									</div>
+									<div class="content-career__main">
+										<ul class="content-career__list list-content-career">
+											<li class="list-content-career__item">Improving overall website performance for mobile users.</li>
+											<li class="list-content-career__item">Collaborate with back-end developers and web designers to improve usability</li>
+											<li class="list-content-career__item">Add voice search feature for mobile app.</li>
+											<li class="list-content-career__item">Developing an admin panel to manage contents, users, products and ...</li>
+										</ul>
+									</div>
+								</div>
+								<div class="content-career__body">
+									<div class="content-career__header">
+										<div class="content-career__title">Front-end Developer <a href="" class="content-career__link-title">Microsoft .Inc</a></div>
+										<div class="content-career__location">California, United States</div>
+										<div class="content-career__time">Nov 2020 - Present · Full-time</div>
+										<div class="content-career__categories">
+											<a href="" class="category-link">Swift</a>
+											<a href="" class="category-link">Go</a>
+										</div>
+									</div>
+									<div class="content-career__main">
+										<ul class="content-career__list list-content-career">
+											<li class="list-content-career__item">Improving overall website performance for mobile users.</li>
+											<li class="list-content-career__item">Collaborate with back-end developers and web designers to improve usability</li>
+											<li class="list-content-career__item">Add voice search feature for mobile app.</li>
+											<li class="list-content-career__item">Developing an admin panel to manage contents, users, products and ...</li>
+										</ul>
+									</div>
+								</div>
+								<div class="content-career__body">
+									<div class="content-career__header">
+										<div class="content-career__title">Front-end Developer <a href="" class="content-career__link-title">Facebook .Inc</a></div>
+										<div class="content-career__location">California, United States</div>
+										<div class="content-career__time">Nov 2020 - Present · Full-time</div>
+										<div class="content-career__categories">
+											<a href="" class="category-link">Swift</a>
+											<a href="" class="category-link">Go</a>
+										</div>
+									</div>
+									<div class="content-career__main">
+										<ul class="content-career__list list-content-career">
+											<li class="list-content-career__item">Improving overall website performance for mobile users.</li>
+											<li class="list-content-career__item">Collaborate with back-end developers and web designers to improve usability</li>
+											<li class="list-content-career__item">Add voice search feature for mobile app.</li>
+											<li class="list-content-career__item">Developing an admin panel to manage contents, users, products and ...</li>
+										</ul>
+									</div>
+								</div>
+								<div class="content-career__body">
+									<div class="content-career__header">
+										<div class="content-career__title">Front-end Developer <a href="" class="content-career__link-title">Slack .Inc</a></div>
+										<div class="content-career__location">California, United States</div>
+										<div class="content-career__time">Nov 2020 - Present · Full-time</div>
+										<div class="content-career__categories">
+											<a href="" class="category-link">Swift</a>
+											<a href="" class="category-link">Go</a>
+										</div>
+									</div>
+									<div class="content-career__main">
+										<ul class="content-career__list list-content-career">
+											<li class="list-content-career__item">Improving overall website performance for mobile users.</li>
+											<li class="list-content-career__item">Collaborate with back-end developers and web designers to improve usability</li>
+											<li class="list-content-career__item">Add voice search feature for mobile app.</li>
+											<li class="list-content-career__item">Developing an admin panel to manage contents, users, products and ...</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section data-fp-section class="page__blog blog">
+					<div class="blog__container">
+						<div class="blog__title title">
+							<div class="title__label">MY ARTICLES</div>
+							<h2 class="title__value">Personal Blog</h2>
+						</div>
+						<div class="blog__items">
+							<article class="blog__item item-blog">
+								<a href="" class="item-blog__image-ibg">
+									<img src="@img/blog/01.jpg" alt="How to prototype in figma">
+								</a>
+								<div class="item-blog__body">
+									<h4 class="item-blog__title">
+										<a href="" class="item-blog__link-title">How to prototype in figma</a>
+									</h4>
+									<div class="item-blog__date date">July 15, 2021</div>
+									<div class="item-blog__text text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id magna nec ante scelerisque laoreet. Fusce finibus ...
+									</div>
+									<a href="" class="item-blog__link">Continue Reading</a>
 								</div>
 							</article>
-							<article data-pid="2" class="products__item item-product">
-								<div class="item-product__labels">
-									<div class="item-product__label item-product__label_new">New</div>
-								</div>
-								<a href="" class="item-product__image _ibg">
-									<img src="img/products/02.jpg" alt="Leviosa">
+							<article class="blog__item item-blog">
+								<a href="" class="item-blog__image-ibg">
+									<img src="@img/blog/02.jpg" alt="How to prototype in figma">
 								</a>
-								<div class="item-product__body">
-									<div class="item-product__content">
-										<h3 class="item-product__title">Leviosa</h3>
-										<div class="item-product__text">Stylish cafe chair</div>
+								<div class="item-blog__body">
+									<h4 class="item-blog__title">
+										<a href="" class="item-blog__link-title">Being more productive with Notion.</a>
+									</h4>
+									<div class="item-blog__date date">July 15, 2021</div>
+									<div class="item-blog__text text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id magna nec ante scelerisque laoreet. Fusce finibus ...
 									</div>
-									<div class="item-product__prices">
-										<div class="item-product__price">Rp 2.500.000</div>
-									</div>
-									<div class="item-product__actions actions-product">
-										<div class="actions-product__body">
-											<a href="" class="actions-product__button btn btn_white">Add to cart</a>
-											<a href="" class="actions-product__link _icon-share">Share</a>
-											<a href="" class="actions-product__link _icon-favorite">Like</a>
-										</div>
-									</div>
+									<a href="" class="item-blog__link">Continue Reading</a>
 								</div>
 							</article>
-							<article data-pid="3" class="products__item item-product">
-								<div class="item-product__labels">
-									<div class="item-product__label item-product__label_sale">-50%</div>
-								</div>
-								<a href="" class="item-product__image _ibg">
-									<img src="img/products/03.jpg" alt="Lolito">
+							<article class="blog__item item-blog">
+								<a href="" class="item-blog__image-ibg">
+									<img src="@img/blog/03.jpg" alt="How to prototype in figma">
 								</a>
-								<div class="item-product__body">
-									<div class="item-product__content">
-										<h3 class="item-product__title">Lolito</h3>
-										<div class="item-product__text">Luxury big sofa</div>
+								<div class="item-blog__body">
+									<h4 class="item-blog__title">
+										<a href="" class="item-blog__link-title">Beginners guide to adobe illustrator</a>
+									</h4>
+									<div class="item-blog__date date">July 15, 2021</div>
+									<div class="item-blog__text text">
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id magna nec ante scelerisque laoreet. Fusce finibus ...
 									</div>
-									<div class="item-product__prices">
-										<div class="item-product__price">Rp 2.500.000</div>
-										<div class="item-product__price item-product__price_old">Rp 3.500.000</div>
-									</div>
-									<div class="item-product__actions actions-product">
-										<div class="actions-product__body">
-											<a href="" class="actions-product__button btn btn_white">Add to cart</a>
-											<a href="" class="actions-product__link _icon-share">Share</a>
-											<a href="" class="actions-product__link _icon-favorite">Like</a>
-										</div>
-									</div>
+									<a href="" class="item-blog__link">Continue Reading</a>
 								</div>
 							</article>
-							<article data-pid="4" class="products__item item-product">
-								<div class="item-product__labels"></div>
-								<a href="" class="item-product__image _ibg">
-									<img src="img/products/04.jpg" alt="Lolito">
-								</a>
-								<div class="item-product__body">
-									<div class="item-product__content">
-										<h3 class="item-product__title">Respira</h3>
-										<div class="item-product__text">Minimalist fan</div>
-									</div>
-									<div class="item-product__prices">
-										<div class="item-product__price">Rp 500.000</div>
-									</div>
-									<div class="item-product__actions actions-product">
-										<div class="actions-product__body">
-											<a href="" class="actions-product__button btn btn_white">Add to cart</a>
-											<a href="" class="actions-product__link _icon-share">Share</a>
-											<a href="" class="actions-product__link _icon-favorite">Like</a>
-										</div>
-									</div>
-								</div>
-							</article>
-						</div>
-						<div class="products__footer">
-							<a href="" class="products__more btn btn_white">Show More</a>
 						</div>
 					</div>
 				</section>
-				<section class="page__rooms rooms">
-					<div class="rooms__container _container">
-						<div class="rooms__body">
-							<h2 class="rooms__title _title">50+ Beautiful rooms inspiration</h2>
-							<div class="rooms__text">Our designer already made a lot of beautiful prototipe of rooms that inspire you</div>
-							<a href="" class="rooms__button btn">Explore More</a>
+				<section data-fp-section class="page__testimonials testimonials">
+					<div class="testimonials__container">
+						<div class="testimonials__title title">
+							<div class="title__label">MY CLIENTS</div>
+							<h2 class="title__value">Testimonials</h2>
 						</div>
-						<div class="rooms__slider slider-rooms">
-							<div class="slider-rooms__body _swiper">
-								<div class="slider-rooms__slide">
-									<div class="slider-rooms__image _ibg">
-										<img src="img/rooms/01.jpg" alt="Bed Room">
-									</div>
-									<a href="" data-swiper-parallax-opacity="0" data-swiper-parallax-y="-100%" class="slider-rooms__content _icon-arrow-link">
-										<div class="slider-rooms__label label-slider">
-											<div class="label-slider__number">01</div>
-											<div class="label-slider__line"></div>
-											<div class="label-slider__text">Bed Room</div>
-										</div>
-										<div class="slider-rooms__title">Inner Peace</div>
-									</a>
+						<div class="testimonials__items">
+							<div class="testimonials__item item-testimonials">
+								<div class="item-testimonials__avatar-ibg">
+									<img src="@img/testimonials/01.jpg" alt="Amelia Miller">
 								</div>
-								<div class="slider-rooms__slide">
-									<div class="slider-rooms__image _ibg">
-										<img src="img/rooms/02.jpg" alt="Bed Room">
-									</div>
-									<a href="" data-swiper-parallax-opacity="0" data-swiper-parallax-y="-100%" class="slider-rooms__content _icon-arrow-link">
-										<div class="slider-rooms__label label-slider">
-											<div class="label-slider__number">02</div>
-											<div class="label-slider__line"></div>
-											<div class="label-slider__text">Bed Room</div>
-										</div>
-										<div class="slider-rooms__title">Inner Peace</div>
-									</a>
-								</div>
-								<div class="slider-rooms__slide">
-									<div class="slider-rooms__image _ibg">
-										<img src="img/rooms/03.jpg" alt="Bed Room">
-									</div>
-									<a href="" data-swiper-parallax-opacity="0" data-swiper-parallax-y="-100%" class="slider-rooms__content _icon-arrow-link">
-										<div class="slider-rooms__label label-slider">
-											<div class="label-slider__number">03</div>
-											<div class="label-slider__line"></div>
-											<div class="label-slider__text">Bed Room</div>
-										</div>
-										<div class="slider-rooms__title">Inner Peace</div>
-									</a>
-								</div>
+								<div class="item-testimonials__text text">We were very pleased to hear how you resolved our website's user interface issues and challenges.</div>
+								<div class="item-testimonials__name">Amelia Miller</div>
+								<div class="item-testimonials__profession date">Designer</div>
 							</div>
-							<div class="slider-rooms__arrows slider-arrows">
-								<button type="button" class="slider-arrow slider-arrow_white slider-arrow_prev _icon-arrow-down"></button>
-								<button type="button" class="slider-arrow slider-arrow_white slider-arrow_next _icon-arrow-down"></button>
+							<div class="testimonials__item item-testimonials">
+								<div class="item-testimonials__avatar-ibg">
+									<img src="@img/testimonials/02.jpg" alt="Amelia Miller">
+								</div>
+								<div class="item-testimonials__text text">
+									We were very pleased to hear how you resolved our website's user interface issues and challenges.
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, quasi!
+								</div>
+								<div class="item-testimonials__name">James Delaney</div>
+								<div class="item-testimonials__profession date">Designer</div>
 							</div>
-							<div class="slider-rooms__dotts"></div>
-						</div>
-					</div>
-				</section>
-				<section class="page__tips tips">
-					<div class="tips__container _container">
-						<h2 class="tips__title _title">Tips & Tricks</h2>
-						<div class="tips__slider slider-tips">
-							<div class="slider-tips__body _swiper">
-								<div class="slider-tips__slide">
-									<a href="" class="slider-tips__image _ibg">
-										<img src="img/tips/01.jpg" alt="How to create a living room to love">
-									</a>
-									<div class="slider-tips__content">
-										<a href="" class="slider-tips__title">How to create a living room to love</a>
-										<div class="slider-tips__text">20 jan 2020</div>
-									</div>
+							<div class="testimonials__item item-testimonials">
+								<div class="item-testimonials__avatar-ibg">
+									<img src="@img/testimonials/03.jpg" alt="Amelia Miller">
 								</div>
-								<div class="slider-tips__slide">
-									<a href="" class="slider-tips__image _ibg">
-										<img src="img/tips/02.jpg" alt="Solution for clean look working space">
-									</a>
-									<div class="slider-tips__content">
-										<a href="" class="slider-tips__title">Solution for clean look working space</a>
-										<div class="slider-tips__text">10 jan 2020</div>
-									</div>
-								</div>
-								<div class="slider-tips__slide">
-									<a href="" class="slider-tips__image _ibg">
-										<img src="img/tips/03.jpg" alt="Make your cooking activity more fun with good setup">
-									</a>
-									<div class="slider-tips__content">
-										<a href="" class="slider-tips__title">Make your cooking activity more fun with good setup</a>
-										<div class="slider-tips__text">20 jan 2020</div>
-									</div>
-								</div>
-							</div>
-							<div class="slider-tips__dotts"></div>
-							<div class="slider-tips__arrows slider-arrows">
-								<button type="button" class="slider-arrow slider-arrow_white slider-arrow_prev _icon-arrow-down"></button>
-								<button type="button" class="slider-arrow slider-arrow_white slider-arrow_next _icon-arrow-down"></button>
+								<div class="item-testimonials__text text">We were very pleased to hear how you resolved our website's user interface issues and challenges.</div>
+								<div class="item-testimonials__name">Isabella Bennett</div>
+								<div class="item-testimonials__profession date">Designer</div>
 							</div>
 						</div>
 					</div>
 				</section>
-				<section class="page__furniture furniture">
-					<div class="furniture__container">
-						<div class="furniture__label">Share your setup with</div>
-						<h2 class="furniture__title _title">#FuniroFurniture</h2>
-						<div data-speed="0.01" class="furniture__body">
-							<div class="furniture__items _gallery">
-								<div class="furniture__column">
-									<div class="furniture__row row-furniture row-furniture_left-top">
-										<a href="img/furniture/09.jpg" class="row-furniture__item"><img src="img/furniture/09.jpg" alt="Image"></a>
-										<a href="img/furniture/01.jpg" class="row-furniture__item"><img src="img/furniture/01.jpg" alt="Image"></a>
-										<a href="img/furniture/02.jpg" class="row-furniture__item"><img src="img/furniture/02.jpg" alt="Image"></a>
-									</div>
-									<div class="furniture__row row-furniture row-furniture_left-bottom">
-										<a href="img/furniture/04.jpg" class="row-furniture__item"><img src="img/furniture/04.jpg" alt="Image"></a>
-										<a href="img/furniture/06.jpg" class="row-furniture__item"><img src="img/furniture/06.jpg" alt="Image"></a>
-										<a href="img/furniture/07.jpg" class="row-furniture__item"><img src="img/furniture/07.jpg" alt="Image"></a>
-									</div>
+				<section data-fp-section class="page__skills skills">
+					<div class="skills__container">
+						<div class="skills__title title">
+							<div class="title__label">MY CLIENTS</div>
+							<h2 class="title__value">Testimonials</h2>
+						</div>
+						<div class="skills__body">
+							<div class="skills__timeline timeline">
+								<div class="timeline__item">
+									<div class="timeline__title">Kingston university</div>
+									<div class="timeline__text">Master's degree - Software Engineering</div>
+									<div class="timeline__date">2019 - 2021</div>
 								</div>
-								<div class="furniture__column">
-									<div class="furniture__row row-furniture row-furniture_center">
-										<a href="img/furniture/03.jpg" class="row-furniture__item"><img src="img/furniture/03.jpg" alt="Image"></a>
-									</div>
+								<div class="timeline__item">
+									<div class="timeline__title">Kingston university</div>
+									<div class="timeline__text">Bachelor's degree - Computer Engineering</div>
+									<div class="timeline__date">2015 - 2019</div>
 								</div>
-								<div class="furniture__column">
-									<div class="furniture__row row-furniture row-furniture_right-top">
-										<a href="img/furniture/04.jpg" class="row-furniture__item"><img src="img/furniture/04.jpg" alt="Image"></a>
-										<a href="img/furniture/05.jpg" class="row-furniture__item"><img src="img/furniture/05.jpg" alt="Image"></a>
-										<a href="img/furniture/01.jpg" class="row-furniture__item"><img src="img/furniture/01.jpg" alt="Image"></a>
+								<div class="timeline__item">
+									<div class="timeline__title">Westminster School </div>
+									<div class="timeline__text">Diploma's degree - Mathematics</div>
+									<div class="timeline__date">2013 - 2015</div>
+								</div>
+							</div>
+							<div class="skills__content content-skills">
+								<div class="content-skills__text text">
+									<p>
+										For 5+ years, I have been continuously learning in the field of front-end and experimenting with new technologies and frameworks, and here you can see a summary of my skills.
+									</p>
+								</div>
+								<div class="content-skills__items">
+									<div class="content-skills__item">
+										<div class="content-skills__label">React</div>
+										<div class="content-skills__line">
+											<span style="width: 67.5%;"></span>
+										</div>
 									</div>
-									<div class="furniture__row row-furniture row-furniture_right-bottom">
-										<a href="img/furniture/08.jpg" class="row-furniture__item"><img src="img/furniture/08.jpg" alt="Image"></a>
-										<a href="img/furniture/09.jpg" class="row-furniture__item"><img src="img/furniture/09.jpg" alt="Image"></a>
-										<a href="img/furniture/06.jpg" class="row-furniture__item"><img src="img/furniture/06.jpg" alt="Image"></a>
+									<div class="content-skills__item">
+										<div class="content-skills__label">Angular</div>
+										<div class="content-skills__line">
+											<span style="width: 52%;"></span>
+										</div>
+									</div>
+									<div class="content-skills__item">
+										<div class="content-skills__label">Javascript</div>
+										<div class="content-skills__line">
+											<span style="width: 63.8%;"></span>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -339,9 +400,9 @@
 					</div>
 				</section>
 			</main>
-			@@include('_footer.html',{})
+			@@include('html/_footer.htm',{})
 		</div>
-		@@include('_popup.html',{})
-		@@include('_js.html',{})
+		@@include('html/_popup.htm',{})
+		@@include('html/_js.htm',{})
 	</body>
 </html>
