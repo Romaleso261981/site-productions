@@ -105,7 +105,7 @@ export function FooterLinks() {
       </Flex>
       <Flex className={classes.afterFooter}>
         <Text c="dimmed" size="sm">
-          © 2020 mantine.dev. All rights reserved.
+          © 2019-2024 Працюємо по всій Україні та за її межами.
         </Text>
       </Flex>
     </footer>
