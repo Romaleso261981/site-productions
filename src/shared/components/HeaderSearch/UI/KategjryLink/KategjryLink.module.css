@@ -1,0 +1,15 @@
+.dropdownWrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.link {
+  display: block;
+  line-height: 1;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--mantine-radius-sm);
+  text-decoration: none;
+  color: light-dark(var(--mantine-color-gray-7), var(--mantine-color-dark-0));
+  font-size: var(--mantine-font-size-sm);
+  font-weight: 500;
+}
