@@ -40,7 +40,7 @@ export const authSlice = createSlice({
     });
 
     builder.addCase(signIn.fulfilled, (state, action) => {
-      state.status = Status.SUCCES;
+      state.status = Status.SUCCESS;
       state.captchaFetch = action.payload;
     });
 

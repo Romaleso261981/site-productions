@@ -15,13 +15,10 @@ const MainPage: FC = () => {
   return (
     <Flex direction="column" mt={matches ? 40 : 10}>
       <EmailBanner />
-      {/* <CardsCarousel /> */}
       {/* <Container size="lg">
         <ImageGroupBanner />
       </Container> */}
-      {/* <StatsGrid /> */}
       {/* <FaqWithHeader /> */}
-      {/* <Asymmetrical /> */}
       {/* <CommentHtml /> */}
       {/* <Container size="lg">
         <ContactUs />

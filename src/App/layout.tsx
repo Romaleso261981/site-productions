@@ -11,17 +11,8 @@ export function Layout() {
   return (
     <Flex justify="space-between" className={s.layoutWrapper} display="-ms-grid" direction="column">
       <Box>
-        {/* <HeaderTabs /> */}
         <HeaderSearch />
       </Box>
-      {/* <Flex mb={matches ? 40 : 10}>
-        <Box ml={40}>
-          <Breadcrumbs />
-        </Box>
-        <Flex ml={40}>
-          <BreadcrumbsComponent />
-        </Flex>
-      </Flex> */}
       <Outlet />
       <Box>
         <FooterLinks />
