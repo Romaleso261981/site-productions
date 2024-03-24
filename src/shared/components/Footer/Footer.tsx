@@ -4,7 +4,7 @@ import { IconBrandInstagram, IconBrandTwitter, IconBrandYoutube } from '@tabler/
 // import { IoMdMail } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 
-import MainLogo from '../MainLogo/MainLogo';
+import MainLogo from '../../../features/MainLogo/MainLogo';
 import classes from './FooterLinks.module.css';
 
 const data = [

@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 import { ADMIN } from '@/constans/constans';
 import { Basket } from '@/features';
 
-import MainLogo from '../MainLogo/MainLogo';
+import MainLogo from '../../../features/MainLogo/MainLogo';
 import classes from './HeaderSearch.module.css';
 
 const links = [
