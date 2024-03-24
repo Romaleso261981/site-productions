@@ -71,12 +71,12 @@ export function FooterLinks() {
             </Text>
             <Flex>
               {/* <IoMdMail /> */}
-              <Text>desheva.kovka1@gmail.com</Text>
+              <Text>ladclimatservice@gmail.com</Text>
             </Flex>
             <Box>
               {/* <FaPhoneVolume /> */}
               <Link className={classes.link} to="/">
-                +380 (97) 706 32 27
+                +380 (68) 947 87 23
               </Link>
             </Box>
           </Flex>

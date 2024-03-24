@@ -4,11 +4,11 @@ import { Card, Image } from '@mantine/core';
 import classes from './CarouselCard.module.css';
 
 const images = [
-  'https://images.prom.ua/3754838004_3754838004.jpg',
-  'https://images.prom.ua/2806183699_2806183699.jpg',
-  'https://images.prom.ua/2332731040_2332731040.jpg',
-  'https://images.prom.ua/2332728868_2332728868.jpg',
-  'https://images.prom.ua/2810656459_2810656459.jpg'
+  'https://marketer.ua/wp-content/uploads/2020/12/create-online-store-1024x532.jpg',
+  'https://websait.uz.ua/wp-content/uploads/2012/01/websaits-frames.jpg',
+  'https://wezom.com.ua/storage/services/medium/hfJv0RlpqMLoexPRhFQwm6wTRuSJQyyu81dkXfbO.png?v=1687365037',
+  'https://internera.com/StyleSheets/Images/layout/main-slider-images/extreme.png',
+  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCGwX6KvseMmaiHjiX4LcXFng3AmAwblKHMtWKJqwucg&s'
 ];
 
 export function CarouselCard() {
