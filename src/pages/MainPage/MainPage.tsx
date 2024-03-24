@@ -15,14 +15,6 @@ const MainPage: FC = () => {
   return (
     <Flex direction="column" mt={matches ? 40 : 10}>
       <EmailBanner />
-      {/* <Container size="lg">
-        <ImageGroupBanner />
-      </Container> */}
-      {/* <FaqWithHeader /> */}
-      {/* <CommentHtml /> */}
-      {/* <Container size="lg">
-        <ContactUs />
-      </Container> */}
     </Flex>
   );
 };
