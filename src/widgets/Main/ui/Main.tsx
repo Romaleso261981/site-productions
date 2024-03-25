@@ -5,6 +5,7 @@ import { useMediaQuery } from '@mantine/hooks';
 import { type FC } from 'react';
 
 import { EmailBanner } from '@/features';
+import { ArticlesCardsGrid } from '@/features/ArticlesCardsGrid/ArticlesCardsGrid';
 import useScrollTop from '@/shared/helpers/useScrollTop';
 
 export const Main: FC = () => {
@@ -15,6 +16,7 @@ export const Main: FC = () => {
   return (
     <Flex direction="column" mt={matches ? 40 : 10}>
       <EmailBanner />
+      <ArticlesCardsGrid />
     </Flex>
   );
 };
