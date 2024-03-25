@@ -6,6 +6,17 @@
   background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-8));
   border: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-8));
 }
+
+.sendMessageWrapper {
+  display: flex;
+  flex-direction: column;
+  /* border: 0.0625rem solid grey; */
+  border-radius: 0.3125rem;
+  padding: 0.3125rem;
+  padding-top: 0.625rem;
+  box-shadow: 17px 22px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
 .heroImage {
   margin: 0 auto;
 }

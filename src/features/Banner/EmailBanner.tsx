@@ -1,13 +1,26 @@
-import { AspectRatio, Button, Flex, Text, TextInput, Title } from '@mantine/core';
+import { AspectRatio, Button, Center, Flex, Text, TextInput, Title } from '@mantine/core';
+import { useState } from 'react';
 import { FaTelegramPlane, FaViber, FaWhatsapp } from 'react-icons/fa';
+
+import { sendMessage } from '@/shared/helpers/sendMessageIntoTelegram';
 
 import image from '../../App/access/web-site/websaits-frames.jpg';
 import classes from './EmailBanner.module.css';
 
 export function EmailBanner() {
-  const sendMessage = () => {
-    alert('Ваше повідомлення відправленно');
+  const [value, setValue] = useState('');
+
+  const handleSendMessage = () => {
+    sendMessage(value);
+    setValue('');
   };
+
+  const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === 'Enter') {
+      handleSendMessage();
+    }
+  };
+
   return (
     <Flex className={classes.wrapper}>
       <div className={classes.body}>
@@ -28,15 +41,22 @@ export function EmailBanner() {
           Ми можемо надати Вам послуги по SEO просування та оптимізації сайту в пошуковій системі
           Google. Також надамо послугу з налаштування контекстної реклами.
         </Text>
-
-        <Flex className={classes.controls}>
-          <TextInput
-            placeholder="Ваш електронна пошта"
-            classNames={{ input: classes.input, root: classes.inputWrapper }}
-          />
-          <Button onClick={sendMessage} ml={10} className={classes.control}>
-            Замовити
-          </Button>
+        <Flex className={classes.sendMessageWrapper}>
+          <Center>
+            <Text size="lg">Для замовлення напишіть свій номер мобільного</Text>
+          </Center>
+          <Flex className={classes.controls}>
+            <TextInput
+              value={value}
+              onChange={(event) => setValue(event.currentTarget.value)}
+              placeholder="Ваш номер телефону"
+              classNames={{ input: classes.input, root: classes.inputWrapper }}
+              onKeyDown={handleKeyPress}
+            />
+            <Button onClick={handleSendMessage} ml={10} className={classes.control}>
+              Замовити
+            </Button>
+          </Flex>
         </Flex>
         <Flex className={classes.social}>
           <Title mt={30}>+380 (68) 947 87 23</Title>

@@ -1,15 +1,4 @@
-import {
-  AspectRatio,
-  Button,
-  Card,
-  Container,
-  Group,
-  Image,
-  SimpleGrid,
-  Text
-} from '@mantine/core';
-
-import { sendMessage } from '@/shared/helpers/sendMessageIntoTelegram';
+import { AspectRatio, Card, Container, Image, SimpleGrid, Text } from '@mantine/core';
 
 import classes from './ArticlesCardsGrid.module.css';
 
@@ -59,22 +48,18 @@ const mockdata = [
   }
 ];
 
-const message = 'Привіт це перше повідомлення з сайту';
-
 export function ArticlesCardsGrid() {
   const cards = mockdata.map((article) => (
-    <Card key={article.id} p="md" radius="md" className={classes.card}>
+    <Card
+      key={article.id}
+      p="md"
+      radius="md"
+      component="a"
+      href={article.href}
+      className={classes.card}>
       <AspectRatio ratio={1920 / 1080}>
         <Image src={article.image} />
       </AspectRatio>
-      <Group pt={10} pb={10}>
-        <Button
-          onClick={() => {
-            sendMessage(message);
-          }}>
-          Замовити
-        </Button>
-      </Group>
       <Text className={classes.title} mt={5}>
         {article.title}
       </Text>
