@@ -1,0 +1,16 @@
+.link {
+  cursor: pointer;
+  font-size: 1.875rem;
+}
+
+@media (max-width: 48.125rem) {
+  .link {
+    font-size: 1.875rem;
+  }
+}
+
+@media (max-width: 25rem) {
+  .link {
+    font-size: 2.1875rem;
+  }
+}

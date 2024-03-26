@@ -1,8 +1,8 @@
-import { ActionIcon, Box, Flex, rem, Text } from '@mantine/core';
-import { IconBrandInstagram, IconBrandTwitter, IconBrandYoutube } from '@tabler/icons-react';
+import { Box, Flex, Text } from '@mantine/core';
 import { Link } from 'react-router-dom';
 
 import MainLogo from '../MainLogo/MainLogo';
+import SocialIcons from '../SocialIcons/SocialIcons';
 import classes from './FooterLinks.module.css';
 
 const data = [
@@ -68,32 +68,15 @@ export function FooterLinks() {
               Додаткові види зв &rsquo; язку
             </Text>
             <Flex>
-              <Text>ladclimatservice@gmail.com</Text>
+              <Text>ladiginscormag@gmail.com</Text>
             </Flex>
             <Box>
-              <Link className={classes.link} to="/">
+              <Link className={classes.phoneLink} to="/">
                 +380 (68) 947 87 23
               </Link>
             </Box>
           </Flex>
-          <Flex
-            gap={0}
-            mt={20}
-            className={classes.social}
-            direction="row"
-            display="flex"
-            justify="flex-end"
-            wrap="nowrap">
-            <ActionIcon size="lg" color="gray" variant="subtle">
-              <IconBrandTwitter style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
-            </ActionIcon>
-            <ActionIcon size="lg" color="gray" variant="subtle">
-              <IconBrandYoutube style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
-            </ActionIcon>
-            <ActionIcon size="lg" color="gray" variant="subtle">
-              <IconBrandInstagram style={{ width: rem(18), height: rem(18) }} stroke={1.5} />
-            </ActionIcon>
-          </Flex>
+          <SocialIcons />
         </Flex>
         <Box visibleFrom="sm" className={classes.groups}>
           {groups}

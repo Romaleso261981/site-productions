@@ -43,6 +43,16 @@
   padding-top: 0.1875rem;
   padding-bottom: 0.1875rem;
 }
+
+.phoneLink {
+  margin-right: 2.5rem;
+  display: block;
+  color: var(--mantine-color-blue-9);
+  font-size: var(--mantine-font-size-sm);
+  padding-top: 0.1875rem;
+  padding-bottom: 0.1875rem;
+}
+
 .link:hover {
   text-decoration: underline;
 }

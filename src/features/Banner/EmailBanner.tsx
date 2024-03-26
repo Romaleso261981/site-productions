@@ -1,10 +1,10 @@
 import { AspectRatio, Button, Center, Flex, Text, TextInput, Title } from '@mantine/core';
 import { useState } from 'react';
-import { FaTelegramPlane, FaViber, FaWhatsapp } from 'react-icons/fa';
 
 import { sendMessage } from '@/shared/helpers/sendMessageIntoTelegram';
 
 import image from '../../App/access/web-site/websaits-frames.jpg';
+import SocialIcons from '../SocialIcons/SocialIcons';
 import classes from './EmailBanner.module.css';
 
 export function EmailBanner() {
@@ -60,11 +60,7 @@ export function EmailBanner() {
         </Flex>
         <Flex className={classes.social}>
           <Title mt={30}>+380 (68) 947 87 23</Title>
-          <Flex mt={20} gap={10} direction="row" justify="center">
-            <FaTelegramPlane />
-            <FaWhatsapp />
-            <FaViber />
-          </Flex>
+          <SocialIcons />
         </Flex>
       </div>
       <div className={classes.slide}>
