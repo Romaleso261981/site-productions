@@ -62,8 +62,13 @@
     flex-direction: column-reverse;
     padding: 0.3125rem;
   }
+
   .wrapper .image {
     max-width: 80%;
+  }
+
+  .social {
+    flex-direction: column;
   }
 
   .body {
@@ -85,23 +90,8 @@
     max-width: 100%;
   }
 
-  .social {
-    flex-direction: column;
-  }
-
   .body {
     padding-right: 0;
     margin-top: var(--mantine-spacing-xl);
   }
 }
-
-/* .input {
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  border-right: 0;
-} */
-
-/* .control {
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-} */

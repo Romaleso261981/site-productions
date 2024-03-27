@@ -16,9 +16,6 @@ export enum DataBasePath {
 
 export enum RoutersPaths {
   MAIN = '/',
-  ABOUT = '/about',
-  CARDDETAIL = '/:id',
-  ADMIN = '/admin',
-  LOGIN = '/login',
+  PRIVACY = '/privacy',
   NOFOUND = '*'
 }
