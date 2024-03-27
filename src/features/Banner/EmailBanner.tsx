@@ -53,8 +53,10 @@ export function EmailBanner() {
               classNames={{ input: classes.input, root: classes.inputWrapper }}
               onKeyDown={handleKeyPress}
             />
-            <Button onClick={handleSendMessage} ml={10} className={classes.control}>
-              Замовити
+            <Button ml={10} className={classes.control}>
+              <a className={classes.controlLink} href="/order">
+                Замовити
+              </a>
             </Button>
           </Flex>
         </Flex>
