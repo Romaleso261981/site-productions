@@ -14,12 +14,12 @@ import { sendMessage } from '@/shared/helpers/sendMessageIntoTelegram';
 import classes from './Order.module.css';
 
 export default function Order() {
-  const [value, setValue] = useState('');
+  const [email, setEmail] = useState<string>('');
+  const [phone, setPhone] = useState<string>('');
 
   const handleSendMessage = () => {
-    sendMessage(value);
+    sendMessage(`email: ${email} phone: ${phone}`);
     window.dataLayer.push({ event: 'formSubmit' });
-    setValue('');
   };
 
   const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
@@ -35,14 +35,14 @@ export default function Order() {
         </Center>
         <Flex className={classes.controls}>
           <TextInput
-            value={value}
-            onChange={(event) => setValue(event.currentTarget.value)}
+            value={email}
+            onChange={(event) => setEmail(event.currentTarget.value)}
             placeholder="Ваша пошта"
             classNames={{ input: classes.input, root: classes.inputWrapper }}
           />
           <TextInput
-            value={value}
-            onChange={(event) => setValue(event.currentTarget.value)}
+            value={phone}
+            onChange={(event) => setPhone(event.currentTarget.value)}
             placeholder="Ваш номер телефону"
             classNames={{ input: classes.input, root: classes.inputWrapper }}
             onKeyDown={handleKeyPress}
