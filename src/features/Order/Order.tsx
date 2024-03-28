@@ -20,6 +20,8 @@ export default function Order() {
   const handleSendMessage = () => {
     sendMessage(`email: ${email} phone: ${phone}`);
     window.dataLayer.push({ event: 'formSubmit' });
+    setEmail('');
+    setPhone('');
   };
 
   const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
