@@ -1,7 +1,6 @@
 .wrapper {
   display: flex;
   align-items: center;
-  padding: calc(var(--mantine-spacing-xl));
   border-radius: var(--mantine-radius-md);
   background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-8));
   border: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-8));
@@ -10,11 +9,11 @@
 .sendMessageWrapper {
   display: flex;
   flex-direction: column;
-  /* border: 0.0625rem solid grey; */
+  margin-top: 40px;
   border-radius: 0.3125rem;
   padding: 0.3125rem;
   padding-top: 0.625rem;
-  box-shadow: 17px 22px 15px -3px rgba(0, 0, 0, 0.1);
+  box-shadow: -5px -5px 15px 15px rgba(0, 0, 0, 0.1);
 }
 
 .heroImage {
@@ -50,6 +49,8 @@
 .controls {
   display: flex;
   flex-direction: column;
+  padding: 0.625rem 1.875rem;
+  gap: 1.25rem;
   margin-top: var(--mantine-spacing-xl);
 }
 

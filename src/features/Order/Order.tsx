@@ -1,3 +1,11 @@
+declare global {
+  interface Window {
+    dataLayer: {
+      push: (...args: { [key: string]: unknown }[]) => void;
+    };
+  }
+}
+
 import { Button, Center, Container, Flex, Group, Text, TextInput } from '@mantine/core';
 import { useState } from 'react';
 
@@ -10,6 +18,7 @@ export default function Order() {
 
   const handleSendMessage = () => {
     sendMessage(value);
+    window.dataLayer.push({ event: 'formSubmit' });
     setValue('');
   };
 
@@ -21,7 +30,7 @@ export default function Order() {
   return (
     <Container>
       <Flex className={classes.sendMessageWrapper}>
-        <Center>
+        <Center pl={15} pr={15} pt={20}>
           <Text size="lg">Для замовлення напишіть свій номер мобільного</Text>
         </Center>
         <Flex className={classes.controls}>
