@@ -1,0 +1,41 @@
+.title {
+  font-size: rem(34px);
+  font-weight: 900;
+}
+
+.description::after {
+  content: '';
+  display: block;
+  background-color: var(--mantine-color-blue-filled);
+  width: rem(45px);
+  height: rem(2px);
+  margin-top: var(--mantine-spacing-sm);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  border: rem(1px) solid light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
+  background-color: #dbdff0;
+}
+
+.cardTitle {
+  font-size: rem(24px);
+  font-weight: 900;
+  color: rgb(26, 25, 25);
+}
+
+.cardTitle::after {
+  content: '';
+  display: block;
+  background-color: var(--mantine-color-blue-filled);
+  width: rem(45px);
+  height: rem(2px);
+  margin-top: var(--mantine-spacing-sm);
+}
+
+@media (max-width: 600px) {
+  .title {
+    font-size: rem(24px);
+  }
+}

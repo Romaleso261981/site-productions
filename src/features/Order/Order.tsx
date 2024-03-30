@@ -51,7 +51,7 @@ export default function Order() {
           />
           <Group>
             <Button onClick={handleSendMessage} ml={10} className={classes.control}>
-              Замовити
+              <a href="/">Замовити</a>
             </Button>
           </Group>
         </Flex>
