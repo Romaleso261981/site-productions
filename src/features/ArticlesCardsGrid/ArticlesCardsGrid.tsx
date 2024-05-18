@@ -20,7 +20,8 @@ const mockdata = [
   {
     id: '3',
     title: 'Інтернет магазин для продажу кондиціонерів',
-    image: 'https://www.ladclimatservice.com.ua/assets/Dr6JgDcFEE.b6104b4f.jpg',
+    image:
+      'https://ladclimatservice.com.ua/wp-content/uploads/2024/05/%D1%81%D0%BB%D0%B0%D0%B9%D0%B4-1-2048x898-1.png',
     href: 'https://www.ladclimatservice.com.ua/',
     date: 'September 9, 2022'
   },
@@ -44,6 +45,13 @@ const mockdata = [
     title: 'Просто ще один невелички лендінг на одну сторінку',
     image: 'https://stunning-strudel-576147.netlify.app/img/main/Bg.jpg',
     href: 'https://stunning-strudel-576147.netlify.app/',
+    date: 'September 12, 2022'
+  },
+  {
+    id: '7',
+    title: 'Просто ще один невелички лендінг на одну сторінку',
+    image: '/Screenshot_1.png',
+    href: 'https://my-own-store.vercel.app/',
     date: 'September 12, 2022'
   }
 ];
