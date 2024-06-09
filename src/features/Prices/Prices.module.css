@@ -1,0 +1,56 @@
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+li {
+  margin-bottom: 10px;
+}
+.groupsWrapper {
+  padding: 0 10px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.group1,
+.group2,
+.group3 {
+  display: flex;
+  padding: 0 10px;
+  flex-direction: column;
+  margin-bottom: 20px;
+  box-shadow: grey 0px 0px 10px;
+}
+.group1 > ul,
+.group2 > ul,
+.group3 > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.group1 > h3,
+.group2 > h3,
+.group3 > h3 {
+  font-size: 1.5em;
+  font-weight: 500;
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+.group1 > ul > li,
+.group2 > ul > li,
+.group3 > ul > li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.group1 > ul > li > span,
+.group2 > ul > li > span,
+.group3 > ul > li > span {
+  font-size: 1.2em;
+  font-weight: 300;
+}
