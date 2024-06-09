@@ -5,34 +5,37 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
     ecmaFeatures: {
-      jsx: true,
-    },
+      jsx: true
+    }
   },
   settings: {
     react: {
-      version: 'detect',
+      version: 'detect'
     },
     'import/resolver': {
       node: {
         paths: ['src'],
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
-      },
-    },
+        extensions: ['.js', '.jsx', '.ts', '.tsx']
+      }
+    }
   },
   env: {
     browser: true,
     amd: true,
-    node: true,
+    node: true
   },
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
     'plugin:jsx-a11y/recommended',
-    'plugin:prettier/recommended',
+    'plugin:prettier/recommended'
   ],
   plugins: ['simple-import-sort', 'prettier'],
   rules: {
+    'import/extensions': 'off',
+    'import/prefer-default-export': 'off',
+    'consistent-return': 'off',
     'prettier/prettier': ['error', {}, { usePrettierrc: true }],
     '@typescript-eslint/consistent-type-imports': ['error', { prefer: 'type-imports' }],
     'react/react-in-jsx-scope': 'off',
@@ -46,8 +49,8 @@ module.exports = {
       {
         components: ['Link'],
         specialLink: ['hrefLeft', 'hrefRight'],
-        aspects: ['invalidHref', 'preferButton'],
-      },
-    ],
-  },
+        aspects: ['invalidHref', 'preferButton']
+      }
+    ]
+  }
 };

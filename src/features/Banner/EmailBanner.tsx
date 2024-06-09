@@ -1,25 +1,24 @@
-import { AspectRatio, Button, Center, Flex, Text, TextInput, Title } from '@mantine/core';
-import { useState } from 'react';
+import { AspectRatio, Button, Center, Flex, Text, Title } from '@mantine/core';
 
-import { sendMessage } from '@/shared/helpers/sendMessageIntoTelegram';
-
+// import { useState } from 'react';
+// import { sendMessage } from '@/shared/helpers/sendMessageIntoTelegram';
 import image from '../../App/access/web-site/websaits-frames.jpg';
 import SocialIcons from '../SocialIcons/SocialIcons';
 import classes from './EmailBanner.module.css';
 
 export function EmailBanner() {
-  const [value, setValue] = useState('');
+  // const [value, setValue] = useState('');
 
-  const handleSendMessage = () => {
-    sendMessage(value);
-    setValue('');
-  };
+  // const handleSendMessage = () => {
+  //   sendMessage(value);
+  //   setValue('');
+  // };
 
-  const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
-    if (event.key === 'Enter') {
-      handleSendMessage();
-    }
-  };
+  // const handleKeyPress = (event: React.KeyboardEvent<HTMLInputElement>) => {
+  //   if (event.key === 'Enter') {
+  //     handleSendMessage();
+  //   }
+  // };
 
   return (
     <Flex className={classes.wrapper}>
@@ -46,14 +45,14 @@ export function EmailBanner() {
             <Text size="lg">Для замовлення напишіть свій номер мобільного</Text>
           </Center>
           <Flex className={classes.controls}>
-            <TextInput
+            {/* <TextInput
               value={value}
               onChange={(event) => setValue(event.currentTarget.value)}
               placeholder="Ваш номер телефону"
               classNames={{ input: classes.input, root: classes.inputWrapper }}
               onKeyDown={handleKeyPress}
-            />
-            <Button ml={10} className={classes.control}>
+            /> */}
+            <Button fullWidth className={classes.control}>
               <a className={classes.controlLink} href="/order">
                 Замовити
               </a>
