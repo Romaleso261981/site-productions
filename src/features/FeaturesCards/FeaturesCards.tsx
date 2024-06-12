@@ -21,25 +21,6 @@ const mockdata = [
     description:
       'They’re popular, but they’re rare. Trainers who show them off recklessly may be targeted by thieves',
     icon: 'https://fabryka.cc/images/landingpage/who4.png'
-  },
-
-  {
-    title: 'Навчальних програм',
-    description:
-      'They’re popular, but they’re rare. Trainers who show them off recklessly may be targeted by thieves',
-    icon: 'https://fabryka.cc/images/landingpage/who3.png'
-  },
-  {
-    title: 'Будівельного бізнесу',
-    description:
-      'They’re popular, but they’re rare. Trainers who show them off recklessly may be targeted by thieves',
-    icon: 'https://fabryka.cc/images/landingpage/who3.png'
-  },
-  {
-    title: 'Будівельного бізнесу',
-    description:
-      'They’re popular, but they’re rare. Trainers who show them off recklessly may be targeted by thieves',
-    icon: 'https://fabryka.cc/images/landingpage/who3.png'
   }
 ];
 
