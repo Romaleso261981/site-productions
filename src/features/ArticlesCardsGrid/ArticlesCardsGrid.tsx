@@ -1,4 +1,13 @@
-import { AspectRatio, Card, Container, Image, SimpleGrid, Text } from '@mantine/core';
+import {
+  AspectRatio,
+  Card,
+  Center,
+  Container,
+  Image,
+  SimpleGrid,
+  Text,
+  Title
+} from '@mantine/core';
 
 import classes from './ArticlesCardsGrid.module.css';
 
@@ -75,7 +84,10 @@ export function ArticlesCardsGrid() {
   ));
 
   return (
-    <Container py="xl">
+    <Container>
+      <Center>
+        <Title mb={20}>Наші роботи</Title>
+      </Center>
       <SimpleGrid cols={{ base: 1, sm: 3 }}>{cards}</SimpleGrid>
     </Container>
   );

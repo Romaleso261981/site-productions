@@ -1,13 +1,15 @@
-import { Container, Flex } from '@mantine/core';
+import { Center, Container, Flex, Title } from '@mantine/core';
 
 import s from './Prices.module.css';
 
 export const Prices = () => {
   return (
     <section>
-      <Container py="xl">
+      <Container py="sm">
         <div className={s.wrapper}>
-          <h2>Ціни на розробку сайту та просування у Вінниці</h2>
+          <Center p={5} mb={30}>
+            <Title w="90%">Ціни на розробку та просування сайту у Вінниці</Title>
+          </Center>
           <Flex className={s.groupsWrapper}>
             <Flex className={s.group1}>
               <h3>СТВОРЕННЯ САЙТІВ</h3>

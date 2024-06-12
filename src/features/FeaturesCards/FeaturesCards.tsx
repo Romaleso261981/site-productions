@@ -56,7 +56,7 @@ export function FeaturesCards() {
   ));
 
   return (
-    <Container size="lg" py="xl">
+    <Container size="lg" py="sm">
       <Title order={2} className={classes.title} ta="center" mt="sm">
         Лендінг-пейдж ідеально підходить для:
       </Title>
