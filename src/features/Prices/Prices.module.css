@@ -43,14 +43,26 @@ li {
 .group1 > ul > li,
 .group2 > ul > li,
 .group3 > ul > li {
+  width: 100%;
+  border-bottom: grey 1px solid;
+  margin: 0;
+  padding: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
 }
+.group1 > ul > li > p,
+.group2 > ul > li > p,
+.group3 > ul > li > p {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
 .group1 > ul > li > span,
 .group2 > ul > li > span,
 .group3 > ul > li > span {
+  display: block;
   font-size: 1.2em;
   font-weight: 300;
 }
