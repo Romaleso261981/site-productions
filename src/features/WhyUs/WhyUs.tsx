@@ -1,8 +1,12 @@
 import { Button, Center, Flex, Text, Title } from '@mantine/core';
+import { useMediaQuery } from '@mantine/hooks';
 
 import s from './WhyUs.module.css';
 
 export const WhyUs = () => {
+  const maches = useMediaQuery('(min-width: 768px)');
+  console.log(maches);
+
   return (
     <Flex className={s.wrapper}>
       <Title>Чому ми?</Title>
@@ -71,7 +75,7 @@ export const WhyUs = () => {
           Для замовлення перейдіт за посиланням
         </Text>
       </Center>
-      <Button fullWidth className={s.control}>
+      <Button className={s.control}>
         <a className={s.controlLink} href="/order">
           Замовити
         </a>
