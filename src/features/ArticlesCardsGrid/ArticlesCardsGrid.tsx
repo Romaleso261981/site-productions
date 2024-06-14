@@ -14,7 +14,7 @@ import classes from './ArticlesCardsGrid.module.css';
 const mockdata = [
   {
     id: '1',
-    title: 'Невеличкий лендінг по виробничтву сайтів',
+    title: 'Лендінг по виробництву сайтів',
     image: 'https://www.site-productions.com.ua/assets/websaits-frames-28d18892.jpg',
     href: 'https://www.site-productions.com.ua/',
     date: 'August 18, 2022'
@@ -31,7 +31,14 @@ const mockdata = [
     title: 'Інтернет магазин для продажу кондиціонерів',
     image:
       'https://ladclimatservice.com.ua/wp-content/uploads/2024/05/%D1%81%D0%BB%D0%B0%D0%B9%D0%B4-1-2048x898-1.png',
-    href: 'https://www.ladclimatservice.com.ua/',
+    href: 'https://ladclimat-service.com.ua/',
+    date: 'September 9, 2022'
+  },
+  {
+    id: '8',
+    title: 'Інтернет магазин для продажу кондиціонерів',
+    image: 'https://your-holod.kyiv.ua/assets/top_pic-deMLLh09.jpg',
+    href: 'https://your-holod.kyiv.ua/',
     date: 'September 9, 2022'
   },
   {
