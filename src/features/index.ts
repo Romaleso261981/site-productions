@@ -7,3 +7,4 @@ export * from './Order/Order';
 export * from './Prices/Prices';
 export * from './SocialIcons/SocialIcons';
 export * from './Strategic/Strategic';
+export * from './WhyUs/WhyUs';
