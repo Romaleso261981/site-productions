@@ -29,8 +29,7 @@ const mockdata = [
   {
     id: '3',
     title: 'Інтернет магазин для продажу кондиціонерів',
-    image:
-      'https://ladclimatservice.com.ua/wp-content/uploads/2024/05/%D1%81%D0%BB%D0%B0%D0%B9%D0%B4-1-2048x898-1.png',
+    image: 'https://ladclimat-service.com.ua/wp-content/uploads/2024/06/2048x898.png',
     href: 'https://ladclimat-service.com.ua/',
     date: 'September 9, 2022'
   },

@@ -1,0 +1,198 @@
+.backDrop {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+}
+.wrapper {
+  display: inline-flex;
+  position: sticky;
+  box-sizing: border-box;
+  width: 80%;
+  min-width: 260px;
+  height: 50%;
+  min-height: 260px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  padding: 25px 20px;
+  margin: 0px;
+  background: url(https://forms.esputnik.com/img/5179/forms/3545/cd17b3a4-0353-48e1-82a9-3d712fac52ee.png)
+    center center / cover no-repeat;
+  border-style: solid;
+  border-width: 0px;
+  border-color: rgb(196, 196, 196);
+  border-radius: 10px;
+  box-shadow: none;
+  font-family: foxtrot, sans-serif, serif;
+  z-index: 10;
+  @media (min-width: 768px) {
+    width: 450px;
+    top: 50%;
+    left: 50%;
+    height: auto;
+    padding: 40px 30px;
+    border: 2px solid red;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.wrapper p {
+  margin: 0px;
+  padding: 0px;
+  padding: 0px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  line-height: 120%;
+  font-weight: 600;
+  font-size: 16px;
+  text-shadow: none;
+  font-family: foxtrot, sans-serif, serif;
+  letter-spacing: 0px;
+}
+
+.wrapper span {
+  padding: 0px;
+  color: rgb(255, 236, 1);
+  text-align: center;
+  line-height: 90%;
+  font-weight: 700;
+  font-size: 24px;
+  text-shadow: none;
+  font-family: foxtrot, sans-serif, serif;
+  letter-spacing: 0px;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  margin: 10px 0px;
+  margin-bottom: 0;
+  padding: 0px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: foxtrot, sans-serif, serif;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+input::placeholder {
+  color: rgb(255, 255, 255);
+}
+.row {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(255, 255, 255);
+}
+.policy {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.policy input {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(217, 217, 217);
+  font-family: foxtrot, sans-serif, serif;
+  background: transparent;
+  --clFocusOutline: 3px solid rgba(217, 217, 217, 0.5);
+  box-shadow: none;
+  cursor: pointer;
+}
+
+.checkBox {
+  margin-right: 10px;
+}
+.policy p {
+  color: rgb(217, 217, 217);
+  text-align: start;
+  line-height: 120%;
+  font-weight: 400;
+  font-size: 10px;
+  text-shadow: none;
+  font-family: foxtrot, sans-serif, serif;
+  letter-spacing: 0px;
+}
+.button {
+  width: 80%;
+  height: 40px;
+  background: rgb(237, 93, 42);
+  border-style: solid;
+  border-width: 0px;
+  border-color: rgb(255, 118, 68);
+  border-radius: 3px;
+  padding: 0px;
+  box-shadow: none;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  line-height: 120%;
+  font-weight: 600;
+  font-size: 12px;
+  text-shadow: none;
+  font-family: foxtrot, sans-serif, serif;
+  letter-spacing: 0px;
+  --clFocusOutline: 3px solid rgba(237, 93, 42, 0.5);
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cross {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.wrapper {
+  display: inline-flex;
+  position: fixed; /* Змінено на fixed */
+  box-sizing: border-box;
+  width: 80%;
+  min-width: 260px;
+  height: 50%;
+  min-height: 260px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  padding: 25px 20px;
+  margin: 0px;
+  background: url(https://forms.esputnik.com/img/5179/forms/3545/cd17b3a4-0353-48e1-82a9-3d712fac52ee.png)
+    center center / cover no-repeat;
+  border-style: solid;
+  border-width: 0px;
+  border-color: rgb(196, 196, 196);
+  border-radius: 10px;
+  box-shadow: none;
+  font-family: foxtrot, sans-serif, serif;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @media (min-width: 768px) {
+    width: 450px;
+    height: auto;
+    padding: 40px 30px;
+    border: 2px solid red;
+  }
+}

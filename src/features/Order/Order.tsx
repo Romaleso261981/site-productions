@@ -1,5 +1,14 @@
 declare global {
   interface Window {
+    gtag: (
+      event: 'event' | 'config' | 'js' | 'set' | 'get' | 'consent',
+      action: string,
+      config?: {
+        page_path?: string;
+        send_to?: string;
+        [key: string]: string | undefined;
+      }
+    ) => void;
     dataLayer: {
       push: (...args: { [key: string]: unknown }[]) => void;
     };
@@ -7,7 +16,7 @@ declare global {
 }
 
 import { Button, Center, Container, Flex, Group, Text, TextInput } from '@mantine/core';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { sendMessage } from '@/shared/helpers/sendMessageIntoTelegram';
 
@@ -17,8 +26,33 @@ export default function Order() {
   const [email, setEmail] = useState<string>('');
   const [phone, setPhone] = useState<string>('');
 
+  useEffect(() => {
+    if (typeof window.gtag === 'function') {
+      fetch('http://remontonlineback.up.railway.app/webhook', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        referrerPolicy: 'unsafe-url'
+      })
+        .then((response) => response.json())
+        .then((result) => {
+          console.log('Success:', result);
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+      sendMessage('зайшли на сторінку замовлення');
+      window.gtag('event', 'conversion', {
+        send_to: 'AW-16595988829/XDt6CJv7_LcZEN3iyuk9',
+        transaction_id: ''
+      });
+    }
+  }, []);
+
   const handleSendMessage = () => {
     sendMessage(`email: ${email} phone: ${phone}`);
+    window.gtag('config', 'AW-16615527475');
     window.dataLayer.push({ event: 'formSubmit' });
     setEmail('');
     setPhone('');

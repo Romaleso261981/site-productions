@@ -20,9 +20,9 @@
 
     "baseUrl": "./src",
     "paths": {
-      "@/*": ["*"],
+      "@/*": ["*"]
     }
   },
-  "include": ["src"],
+  "include": ["src", "src/global.d.ts", "src/global.d.tsx", "src/global.ts", "src/global.tsx"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

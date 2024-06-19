@@ -4,11 +4,13 @@ import s from './Prices.module.css';
 
 export const Prices = () => {
   return (
-    <section>
+    <section className={s.bg}>
       <Container py="sm">
         <div className={s.wrapper}>
           <Center p={5} mb={30}>
-            <Title w="90%">Ціни на розробку та просування сайту у Вінниці</Title>
+            <Title fw={700} w="90%">
+              Ціни на розробку та просування сайту у Вінниці
+            </Title>
           </Center>
           <Flex className={s.groupsWrapper}>
             <Flex className={s.group1}>
