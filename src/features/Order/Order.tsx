@@ -44,8 +44,9 @@ export default function Order() {
         });
       sendMessage('зайшли на сторінку замовлення');
       window.gtag('event', 'conversion', {
-        send_to: 'AW-16595988829/XDt6CJv7_LcZEN3iyuk9',
-        transaction_id: ''
+        send_to: 'AW-16615527475/7wEbCNWWwbsZELOo8_I9',
+        value: '200.0',
+        currency: 'UAH'
       });
     }
   }, []);

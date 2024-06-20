@@ -3,6 +3,7 @@ declare global {
     gtag: (
       event: 'event' | 'config' | 'js' | 'set' | 'get' | 'consent',
       action: string,
+      value: number,
       config?: {
         page_path?: string;
         send_to?: string;
