@@ -45,7 +45,7 @@ export default function Order() {
       sendMessage('зайшли на сторінку замовлення');
       window.gtag('event', 'conversion', {
         send_to: 'AW-16615527475/7wEbCNWWwbsZELOo8_I9',
-        value: '200.0',
+        value: '50.0',
         currency: 'UAH'
       });
     }
