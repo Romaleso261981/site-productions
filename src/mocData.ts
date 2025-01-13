@@ -126,5 +126,21 @@ export const ourJobs = [
       'https://snip-v2-front.vercel.app/_next/image?url=https%3A%2F%2Fstrapi-cms-production-f73b.up.railway.app%2Fuploads%2FFrame_b7cf290f04.jpg&w=750&q=75',
     href: 'https://snip-v2-front.vercel.app/uk',
     date: 'September 12, 2024'
+  },
+  {
+    id: '9',
+    title:
+      'Інтернет магазин по продажу та обслуговуванню кондиціонерів. Кондиціонери від офіційного представника в Україні Idea, Midea, Cooper&Hunter, Daikin, Mitsubishi Electric, Panasonic, Haier,  Zanussi, Hitachi, Gree, NeoClima, Sensei',
+    image: '/public/conditioner.jpg',
+    href: 'https://your-holod.kyiv.ua/',
+    date: 'May 02, 2023'
+  },
+  {
+    id: '10',
+    title:
+      'Відкрийте для себе світ неперевершених смаків з нашим ексклюзивним асортиментом морозива! У нашому каталозі ви знайдете все: від класичних ванільних насолод до екзотичних фруктових спокус. Кожен наш продукт створюється з любовю та турботою.',
+    image: '/public/icecream.png',
+    href: 'https://romaleso261981.github.io/ice-cream_project/',
+    date: 'May 02, 2023'
   }
 ];
