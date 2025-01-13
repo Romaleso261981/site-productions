@@ -10,7 +10,7 @@ import {
 } from '@mantine/core';
 
 import { ourJobs } from '@/mocData';
-import TextTruncate from '@/shared/helpers/TextTruncate';
+import TextTruncate from '@/shared/helpers/TextTruncate/TextTruncate';
 
 import classes from './ArticlesCardsGrid.module.css';
 
