@@ -1,28 +1,8 @@
 import { Avatar, Card, Center, Container, SimpleGrid, Text, Title } from '@mantine/core';
 
-import icon from '../../App/access/who8.png';
-import classes from './FeaturesCards.module.css';
+import { mockdata } from '@/mocData';
 
-const mockdata = [
-  {
-    title: 'Сфери послуг',
-    description:
-      'This dust is actually a powerful poison that will even make a pro wrestler sick, Regice cloaks itself with frigid air of -328 degrees Fahrenheit',
-    icon: icon
-  },
-  {
-    title: 'Продажу унікальних або дорогого товару',
-    description:
-      'People say it can run at the same speed as lightning striking, Its icy body is so cold, it will not melt even if it is immersed in magma',
-    icon: 'https://fabryka.cc/images/landingpage/who3.png'
-  },
-  {
-    title: 'Оптової торгівлі',
-    description:
-      'They’re popular, but they’re rare. Trainers who show them off recklessly may be targeted by thieves',
-    icon: 'https://fabryka.cc/images/landingpage/who4.png'
-  }
-];
+import classes from './FeaturesCards.module.css';
 
 export function FeaturesCards() {
   const features = mockdata.map((feature) => (

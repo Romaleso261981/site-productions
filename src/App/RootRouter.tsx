@@ -2,6 +2,7 @@ import { lazy, Suspense } from 'react';
 import { Route, Routes } from 'react-router-dom';
 
 import { Spiner } from '@/features/Loader/Loader';
+import AboutPage from '@/pages/About/AboutPage';
 import { RoutersPaths } from '@/shared/types/enums';
 
 import { Layout } from './layout';
@@ -20,6 +21,8 @@ export default function RootRouter() {
           <Route path={RoutersPaths.ORDER} element={<Order />} />
           <Route path={RoutersPaths.PRIVACY} element={<PrivacyPolicyMessage />} />
           <Route path={RoutersPaths.NOFOUND} element={<NotFound />} />
+          <Route path={RoutersPaths.ABOUT} element={<AboutPage />} />
+          <Route path={RoutersPaths.ADRESS} element={<AboutPage />} />
         </Route>
       </Routes>
     </Suspense>
