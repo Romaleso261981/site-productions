@@ -4,7 +4,7 @@ import { Flex } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import { type FC, useEffect, useState } from 'react';
 
-import { EmailBanner, IWantSite, Prices, Strategic, WeWillCallYou, WhyUs } from '@/features';
+import { EmailBanner, Prices, Strategic, WeWillCallYou, WhyUs } from '@/features';
 import { ArticlesCardsGrid } from '@/features/ArticlesCardsGrid/ArticlesCardsGrid';
 import { BannerSale } from '@/features/EmailBanner/EmailBanner';
 import { FeaturesCards } from '@/features/FeaturesCards/FeaturesCards';
@@ -60,7 +60,7 @@ export const Main: FC = () => {
       <ArticlesCardsGrid />
       <Strategic />
       <WhyUs />
-      <IWantSite />
+      {/* <IWantSite /> */}
       <OrderModal />
       {isShowCallBaner && <WeWillCallYou toggleBaner={toggleBaner} />}
     </Flex>
