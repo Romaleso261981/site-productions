@@ -91,7 +91,7 @@ export const ourJobs = [
   },
   {
     id: '4',
-    title: 'Невеличкий лендінг магазин з продажу кофе',
+    title: 'Невеличкий лендінг магазин з продажу кави',
     image: 'https://l-coffee-shop.netlify.app/images/home-img.jpg',
     href: 'https://l-coffee-shop.netlify.app/',
     date: 'September 12, 2022'
