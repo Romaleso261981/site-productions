@@ -3,7 +3,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  padding: calc(var(--mantine-spacing-xl));
+  padding: 20px;
   border-radius: var(--mantine-radius-md);
   background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-8));
   border: rem(1px) solid light-dark(var(--mantine-color-gray-3), var(--mantine-color-dark-8));
@@ -42,4 +42,16 @@
   text-decoration: none;
   font-size: large;
   color: var(--mantine-color-white, 0.1);
+}
+
+@media (max-width: 768px) {
+  .bodyCard {
+    width: 100%;
+  }
+  .wrapper {
+    padding: 10px;
+  }
+  .body{
+    padding: 0;
+  }
 }

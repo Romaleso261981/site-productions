@@ -82,41 +82,13 @@ export const ourJobs = [
     href: 'https://ladclimat-service.com.ua/',
     date: 'September 9, 2022'
   },
-  {
-    id: '8',
-    title: 'Інтернет магазин для продажу кондиціонерів',
-    image: 'https://your-holod.kyiv.ua/assets/top_pic-deMLLh09.jpg',
-    href: 'https://your-holod.kyiv.ua/',
-    date: 'September 9, 2022'
-  },
+
   {
     id: '4',
     title: 'Невеличкий лендінг магазин з продажу кави',
     image: 'https://l-coffee-shop.netlify.app/images/home-img.jpg',
     href: 'https://l-coffee-shop.netlify.app/',
     date: 'September 12, 2022'
-  },
-  {
-    id: '12',
-    title: 'Portfolio Leso Roman FullStack Developer',
-    image: '/portfolio.png',
-    href: 'https://my-portfolio-flame-nu-85.vercel.app/',
-    date: 'September 12, 2021'
-  },
-  {
-    id: '13',
-    title: 'Take goode care of your pets with Petly',
-    image: '/petly.png',
-    href: 'https://viacheslav-tykhovlis.github.io/petly-site/',
-    date: 'September 12, 2021'
-  },
-  {
-    id: '11',
-    title:
-      'Невеличкий лендінг магазин з продажу кавиФільмотека - це універсальна платформа для справжніх кіноманів! Ваша фільмотека надає можливість зберігати, організовувати та переглядати улюблені фільми в зручному і стильному інтерфейсі. Чи ви шукаєте класичні кінострічки, останні новинки чи незалежне кіно, наша фільмотека задовольнить ваші потреби.',
-    image: '/filmoteka.png',
-    href: 'https://romaleso261981.github.io/filmoteka2021/',
-    date: 'September 17, 2021'
   },
   {
     id: '5',
@@ -164,5 +136,74 @@ export const ourJobs = [
     image: '/icecream.png',
     href: 'https://romaleso261981.github.io/ice-cream_project/',
     date: 'May 02, 2023'
+  },
+  {
+    id: '11',
+    title: 'Інтернет магазин для продажу кондиціонерів',
+    image: 'https://your-holod.kyiv.ua/assets/top_pic-deMLLh09.jpg',
+    href: 'https://your-holod.kyiv.ua/',
+    date: 'September 9, 2022'
+  },
+  {
+    id: '12',
+    title: 'Portfolio Leso Roman FullStack Developer',
+    image: '/portfolio.png',
+    href: 'https://my-portfolio-flame-nu-85.vercel.app/',
+    date: 'September 12, 2021'
+  },
+  {
+    id: '13',
+    title: 'Take goode care of your pets with Petly',
+    image: '/petly.png',
+    href: 'https://viacheslav-tykhovlis.github.io/petly-site/',
+    date: 'September 12, 2021'
+  },
+  {
+    id: '14',
+    title:
+      'Невеличкий лендінг магазин з продажу кавиФільмотека - це універсальна платформа для справжніх кіноманів! Ваша фільмотека надає можливість зберігати, організовувати та переглядати улюблені фільми в зручному і стильному інтерфейсі. Чи ви шукаєте класичні кінострічки, останні новинки чи незалежне кіно, наша фільмотека задовольнить ваші потреби.',
+    image: '/filmoteka.png',
+    href: 'https://romaleso261981.github.io/filmoteka2021/',
+    date: 'September 17, 2021'
+  }
+];
+
+export const pricesForServices = [
+  {
+    id: '1',
+    title: 'СТВОРЕННЯ САЙТІВ',
+    work: [
+      { id: '1', title: 'Простий сайт', price: 5300 },
+      { id: '2', title: 'Сайт-візитка', price: 9600 },
+      { id: '3', title: 'Інтернет магазин', price: 40000 },
+      { id: '4', title: 'Корпоративний сайт', price: 30000 },
+      { id: '5', title: 'Сайт-каталог', price: 6000 },
+      { id: '6', title: 'Лендінг', price: 10000 },
+      { id: '7', title: 'Індивідуальний проект', price: 15000 }
+    ]
+  },
+  {
+    id: '2',
+    title: 'SEO',
+    work: [
+      { id: '1', title: 'Контекстна реклама', price: 5500 },
+      { id: '2', title: 'Просування (SEO)', price: 9600 },
+      { id: '3', title: 'SEO аудит сайту', price: 10000 },
+      { id: '4', title: 'Комплексне просування', price: 15000 },
+      { id: '5', title: 'Стратегія розвитку бізнесу', price: 50000 },
+      { id: '6', title: 'Корпоративний сайт', price: 20000 }
+    ]
+  },
+  {
+    id: '3',
+    title: 'Послуги',
+    work: [
+      { id: '1', title: 'Технічна підтримка', price: 5200 },
+      { id: '2', title: 'Додаткові модулі, опції', price: 4000 },
+      { id: '3', title: 'Редизайн сайту', price: 10000 },
+      { id: '4', title: 'Розробка логотипу', price: 3000 },
+      { id: '5', title: 'Індивідуальний дизайн', price: 20000 },
+      { id: '6', title: 'Домен, Хостинг', price: 2000 }
+    ]
   }
 ];

@@ -18,6 +18,7 @@ export enum RoutersPaths {
   MAIN = '/',
   ORDER = '/order',
   ABOUT = '/about',
+  CONTACTS = '/contacts',
   ADRESS = '/adress',
   PRIVACY = '/privacy',
   NOFOUND = '*'

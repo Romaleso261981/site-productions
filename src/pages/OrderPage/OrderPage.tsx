@@ -1,5 +1,7 @@
 import Order from '@/features/Order/Order';
 
-export default function OrderPage() {
+const OrderPage = () => {
   return <Order />;
-}
+};
+
+export default OrderPage;

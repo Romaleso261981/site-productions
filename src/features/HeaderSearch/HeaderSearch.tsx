@@ -3,6 +3,7 @@ import { useMediaQuery } from '@mantine/hooks';
 import { useTranslation } from 'react-i18next';
 import { FaPhoneVolume } from 'react-icons/fa6';
 import { IoMdMail } from 'react-icons/io';
+import { MdContactPage } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
 import { ADMIN } from '@/constans/constans';
@@ -43,6 +44,12 @@ export function HeaderSearch() {
             <FaPhoneVolume />
             <Link className={classes.link} to="/">
               +380 (68) 947 87 23
+            </Link>
+          </Group>
+          <Group>
+            <MdContactPage />
+            <Link className={classes.link} to="/contacts">
+              Контакти
             </Link>
           </Group>
         </Flex>

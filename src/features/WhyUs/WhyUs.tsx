@@ -1,12 +1,8 @@
 import { Button, Center, Flex, Text, Title } from '@mantine/core';
-import { useMediaQuery } from '@mantine/hooks';
 
 import s from './WhyUs.module.css';
 
 export const WhyUs = () => {
-  const maches = useMediaQuery('(min-width: 768px)');
-  console.log(maches);
-
   return (
     <Flex className={s.wrapper}>
       <Title>Чому ми?</Title>

@@ -10,14 +10,15 @@ const NotFound = () => {
       <div className={classes.inner}>
         <Illustration className={classes.image} />
         <div className={classes.content}>
-          <Title className={classes.title}>Nothing to see here</Title>
+          <Title className={classes.title}>Тут нічого не видно</Title>
           <Text c="dimmed" size="lg" ta="center" className={classes.description}>
-            Page you are trying to open does not exist. You may have mistyped the address, or the
-            page has been moved to another URL. If you think this is an error contact support.
+            Сторінка, яку ви намагаєтеся відкрити, не існує. Можливо, ви неправильно ввели адресу
+            або сторінку переміщено на іншу URL-адресу. Якщо ви вважаєте, що це помилка, зверніться
+            до служби підтримки.
           </Text>
           <Group justify="center">
-            <Link to="/gateWithCorrugatedBoard">
-              <Button size="md">Take me back to home page</Button>
+            <Link to="/">
+              <Button size="md">Поверни мене на головну сторінку</Button>
             </Link>
           </Group>
         </div>
