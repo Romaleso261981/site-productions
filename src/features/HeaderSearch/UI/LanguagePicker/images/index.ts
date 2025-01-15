@@ -13,5 +13,5 @@ export default {
   italian,
   polish,
   ukraine,
-  ukraine2,
+  ukraine2
 };
