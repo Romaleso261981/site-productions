@@ -10,9 +10,23 @@ ul {
   padding: 0;
   margin: 0;
 }
+
+.mainTitle{
+  font-size: 2em;
+  font-weight: 600;
+  padding: 10px;
+  margin: 0;
+  width: 100%;
+  font-weight: 600;
+  text-align: center;
+  color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-6));
+  border-bottom: 1px solid light-dark(var(--mantine-color-white), var(--mantine-color-dark-6));
+}
+
 li {
   margin-bottom: 10px;
 }
+
 .groupsWrapper {
   padding: 0 10px;
   margin: 0 auto;
@@ -20,6 +34,7 @@ li {
   justify-content: center;
   margin-bottom: 20px;
 }
+
 .group1,
 .group2,
 .group3 {
@@ -27,9 +42,10 @@ li {
   padding: 0 10px;
   flex-direction: column;
   margin-bottom: 20px;
-  background-color: #f8f7f7;
+  background-color: light-dark(var(--mantine-color-white), var(--mantine-color-dark-6));
   box-shadow: grey 0px 0px 10px;
 }
+
 .group1 > ul,
 .group2 > ul,
 .group3 > ul {

@@ -1,4 +1,4 @@
-import { Button, Flex, Group } from '@mantine/core';
+import { Flex, Group } from '@mantine/core';
 import { useMediaQuery } from '@mantine/hooks';
 import { useTranslation } from 'react-i18next';
 import { FaPhoneVolume } from 'react-icons/fa6';
@@ -6,26 +6,14 @@ import { IoMdMail } from 'react-icons/io';
 import { MdContactPage } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 
-import { ADMIN } from '@/constans/constans';
-
 import MainLogo from '../MainLogo/MainLogo';
 import classes from './HeaderSearch.module.css';
-
-const links = [
-  { link: '/about', label: 'Про нас' },
-  { link: '/adress', label: 'Адресса' }
-];
+import { ColorSwitch, Navbar } from './UI';
+import LanguagePicker from './UI/LanguagePicker/LanguagePicker';
 
 export function HeaderSearch() {
-  const { t } = useTranslation();
-
-  const items = links.map((link) => (
-    <Flex key={link.label}>
-      <Link className={classes.link} to={link.link}>
-        {link.label}
-      </Link>
-    </Flex>
-  ));
+  const { t } = useTranslation('footer');
+  const mob = useMediaQuery('(max-width: 768px)');
 
   return (
     <header className={classes.header}>
@@ -33,7 +21,7 @@ export function HeaderSearch() {
         <Group ml={40}>
           <MainLogo />
         </Group>
-        <Flex className={classes.list} direction="column">
+        <Flex className={classes.list} direction={mob ? 'column' : 'row'}>
           <Flex gap={20}>
             <IoMdMail />
             <Link className={classes.link} to="/">
@@ -49,24 +37,15 @@ export function HeaderSearch() {
           <Group>
             <MdContactPage />
             <Link className={classes.link} to="/contacts">
-              Контакти
+              {t('contacts')}
             </Link>
           </Group>
         </Flex>
-        <Flex
-          gap={15}
-          display="flex"
-          justify="flex-end"
-          p={5}
-          direction={useMediaQuery('(min-width: 55.625rem)') ? 'row' : 'column'}
-          visibleFrom="sm">
-          {items}
-          {ADMIN === 'admin' && (
-            <Button>
-              <a href="/community">{t('header.kolyaRobota')}</a>
-            </Button>
-          )}
-        </Flex>
+        <Group display="flex" align="center" justify="center">
+          <ColorSwitch />
+          <LanguagePicker type="collapsed" />
+          <Navbar />
+        </Group>
       </div>
     </header>
   );

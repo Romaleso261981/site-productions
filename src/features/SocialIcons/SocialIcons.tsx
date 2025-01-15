@@ -1,9 +1,12 @@
 import { Flex } from '@mantine/core';
+import { useMediaQuery } from '@mantine/hooks';
 import { FaTelegramPlane, FaViber, FaWhatsapp } from 'react-icons/fa';
 
 import s from './SocialIcons.module.css';
 
 export default function SocialIcons() {
+  const mob = useMediaQuery('(max-width: 450px)');
+
   const handleTelegramClick = () => {
     window.open('https://t.me/Leso_Roman', '_blank');
   };
@@ -15,8 +18,9 @@ export default function SocialIcons() {
   const handleViberClick = () => {
     window.open('viber://chat?number=380689478723', '_blank');
   };
+
   return (
-    <Flex mt={20} gap={10} direction="row" justify="center">
+    <Flex mt={20} gap={10} mb={mob ? 40 : 10} direction="row" justify="center">
       <FaTelegramPlane color="blue" className={s.link} onClick={handleTelegramClick} />
       <FaWhatsapp color="blue" className={s.link} onClick={handleViberClick} />
       <FaViber color="green" className={s.link} onClick={handleWhatsappClick} />

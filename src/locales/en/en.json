@@ -40,5 +40,12 @@
     "users": "Users",
     "settings": "Settings",
     "logout": "Logout"
+  },
+  "footer": {
+    "about": "About",
+    "contact": "Contact",
+    "terms": "Terms of use",
+    "privacy": "Privacy policy",
+    "support": "Support"
   }
 }

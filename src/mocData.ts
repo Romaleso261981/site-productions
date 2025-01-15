@@ -207,3 +207,24 @@ export const pricesForServices = [
     ]
   }
 ];
+
+export const footerLinkdata = [
+  {
+    title: 'Про нас',
+    links: [
+      { label: 'Телефон ', link: '#' },
+      { label: 'Ціни', link: '#' },
+      { label: 'Підтримка', link: '#' },
+      { label: 'Форуми', link: '#' }
+    ]
+  },
+  {
+    title: 'Проекти',
+    links: [
+      { label: 'Лендінги', link: '#' },
+      { label: 'Корпоративні сайти', link: '#' },
+      { label: 'Інтернет магазини', link: '#' },
+      { label: 'Сайт візитка', link: '#' }
+    ]
+  }
+];

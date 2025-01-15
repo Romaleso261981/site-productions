@@ -1,42 +1,14 @@
 import { Box, Flex, Text } from '@mantine/core';
 import { Link } from 'react-router-dom';
 
+import { footerLinkdata } from '@/mocData';
+
 import MainLogo from '../MainLogo/MainLogo';
 import SocialIcons from '../SocialIcons/SocialIcons';
 import classes from './FooterLinks.module.css';
 
-const data = [
-  {
-    title: 'Про нас',
-    links: [
-      { label: 'Телефон ', link: '#' },
-      { label: 'Pricing', link: '#' },
-      { label: 'Support', link: '#' },
-      { label: 'Forums', link: '#' }
-    ]
-  },
-  {
-    title: 'Project',
-    links: [
-      { label: 'Contribute', link: '#' },
-      { label: 'Media assets', link: '#' },
-      { label: 'Changelog', link: '#' },
-      { label: 'Releases', link: '#' }
-    ]
-  },
-  {
-    title: 'Community',
-    links: [
-      { label: 'Join Discord', link: '#' },
-      { label: 'Follow on Twitter', link: '#' },
-      { label: 'Email newsletter', link: '#' },
-      { label: 'GitHub discussions', link: '#' }
-    ]
-  }
-];
-
 export function FooterLinks() {
-  const groups = data.map((group) => {
+  const groups = footerLinkdata.map((group) => {
     const links = group.links.map((link, index) => (
       <Text<'a'>
         key={index}
@@ -65,7 +37,7 @@ export function FooterLinks() {
           </Flex>
           <Flex direction="column">
             <Text mt={20} mb={20} fw={900} size="sm">
-              Додаткові види зв &rsquo; язку
+              Додаткові види зв&rsquo;язку
             </Text>
             <Flex>
               <Text>ladiginscormag@gmail.com</Text>
@@ -84,7 +56,7 @@ export function FooterLinks() {
       </Flex>
       <Flex className={classes.afterFooter}>
         <Text c="dimmed" size="sm">
-          © 2019-2024 Працюємо по всій Україні
+          © 2019-2025 Працюємо по всій Україні
         </Text>
       </Flex>
     </footer>
