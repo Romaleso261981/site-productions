@@ -15,7 +15,7 @@ import { ContactIconsList } from './ui/ContactIcon';
 
 const social = [IconBrandTwitter, IconBrandYoutube, IconBrandInstagram];
 
-export function Contacts() {
+export const Contacts = () => {
   const icons = social.map((Icon, index) => (
     <ActionIcon key={index} size={28} className={classes.social} variant="transparent">
       <Icon size={22} stroke={1.5} />
@@ -64,4 +64,4 @@ export function Contacts() {
       </SimpleGrid>
     </div>
   );
-}
+};

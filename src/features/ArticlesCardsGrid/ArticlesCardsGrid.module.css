@@ -1,8 +1,13 @@
 .card {
   transition:
-    transform 150ms ease,
-    box-shadow 150ms ease;
+  transform 150ms ease,
+  box-shadow 150ms ease;
   background-color: #fff;
+}
+
+.mainTitle{
+  margin-bottom: 20px;
+  color: light-dark(var(--mantine-color-black-1), var(--mantine-color-white-1));
 }
 
 .card:hover {

@@ -9,7 +9,7 @@ import {
   Textarea,
   TextInput
 } from '@mantine/core';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import { sendMessage } from '@/shared/helpers/sendMessageIntoTelegram';
 
@@ -61,30 +61,30 @@ export default function Order() {
   const [emailSuggestions, setEmailSuggestions] = useState<string[]>([]);
   const [phoneSuggestions, setPhoneSuggestions] = useState<string[]>([]);
 
-  useEffect(() => {
-    if (typeof window.gtag === 'function') {
-      fetch('http://remontonlineback.up.railway.app/webhook', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json'
-        },
-        referrerPolicy: 'unsafe-url'
-      })
-        .then((response) => response.json())
-        .then((result) => {
-          console.log('Success:', result);
-        })
-        .catch((error) => {
-          console.error('Error:', error);
-        });
-      sendMessage('зайшли на сторінку замовлення');
-      window.gtag('event', 'conversion', {
-        send_to: 'AW-16615527475/7wEbCNWWwbsZELOo8_I9',
-        value: '50.0',
-        currency: 'UAH'
-      });
-    }
-  }, []);
+  // useEffect(() => {
+  //   if (typeof window.gtag === 'function') {
+  //     fetch('http://remontonlineback.up.railway.app/webhook', {
+  //       method: 'POST',
+  //       headers: {
+  //         'Content-Type': 'application/json'
+  //       },
+  //       referrerPolicy: 'unsafe-url'
+  //     })
+  //       .then((response) => response.json())
+  //       .then((result) => {
+  //         console.log('Success:', result);
+  //       })
+  //       .catch((error) => {
+  //         console.error('Error:', error);
+  //       });
+  //     sendMessage('зайшли на сторінку замовлення');
+  //     window.gtag('event', 'conversion', {
+  //       send_to: 'AW-16615527475/7wEbCNWWwbsZELOo8_I9',
+  //       value: '50.0',
+  //       currency: 'UAH'
+  //     });
+  //   }
+  // }, []);
 
   const validateEmail = (email: string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

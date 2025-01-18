@@ -1,6 +1,6 @@
 import type { FC } from 'react';
 
-import About from '@/widgets/About/About';
+import { About } from '@/widgets';
 
 const AboutPage: FC = () => {
   return <About />;

@@ -1,6 +1,6 @@
 import s from './About.module.css';
 
-const About = () => {
+export const About = () => {
   return (
     <div className={s.wrapper}>
       <div>About</div>
@@ -8,5 +8,3 @@ const About = () => {
     </div>
   );
 };
-
-export default About;

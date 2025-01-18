@@ -29,7 +29,7 @@ export function ArticlesCardsGrid() {
   return (
     <Container>
       <Center>
-        <Title mb={20}>Наші роботи</Title>
+        <Title className={classes.mainTitle}>Наші роботи</Title>
       </Center>
       <SimpleGrid cols={{ base: 1, sm: 3 }}>{cards}</SimpleGrid>
     </Container>
