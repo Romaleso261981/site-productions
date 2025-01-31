@@ -30,7 +30,7 @@ export function EmailBanner() {
             <Text size="lg">Для замовлення напишіть свій номер мобільного</Text>
           </Center>
           <Flex className={classes.controls}>
-            <Button fullWidth className={classes.control}>
+            <Button w={200}>
               <a className={classes.controlLink} href="/order">
                 Замовити
               </a>

@@ -6,6 +6,7 @@ type TextTruncateProps = {
   text: string;
   maxLength: number;
   href?: string;
+  textColor?: string;
 };
 
 export default function TextTruncate({ text, maxLength, href }: TextTruncateProps) {
@@ -31,11 +32,13 @@ export default function TextTruncate({ text, maxLength, href }: TextTruncateProp
           )}
         </div>
       )}
-      <div>
-        <a className={s.ancorr} href={href}>
-          Перейти
-        </a>
-      </div>
+      {href && (
+        <div>
+          <a className={s.ancorr} href={href}>
+            Перейти
+          </a>
+        </div>
+      )}
     </div>
   );
 }

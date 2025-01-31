@@ -32,11 +32,13 @@ export const Strategic = () => {
             Для замовлення перейдіт за посиланням
           </Text>
         </Center>
-        <Button fullWidth className={s.control}>
-          <a className={s.controlLink} href="/order">
-            Замовити
-          </a>
-        </Button>
+        <Center mt="md">
+          <Button w={200}>
+            <a className={s.controlLink} href="/order">
+              Замовити
+            </a>
+          </Button>
+        </Center>
       </Container>
     </section>
   );

@@ -34,14 +34,10 @@
   color: var(--mantine-color-black, 0.1);
 }
 
-.control {
-  height: 50px;
-}
-
 .controlLink {
+  color: white;
   text-decoration: none;
-  font-size: large;
-  color: var(--mantine-color-white, 0.1);
+  margin: 0;
 }
 
 @media (max-width: 768px) {

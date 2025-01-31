@@ -71,56 +71,6 @@ export const ourJobs = [
   },
   {
     id: '2',
-    title: 'Інтернет магазин попродажу кованих виробів',
-    image: '/deshevaKovkaBaner.jpg.webp',
-    href: 'https://deshevakovka.vercel.app',
-    githref: 'https://vercel.com/romaleso261981s-projects/deshevakovka',
-    date: 'August 27, 2022'
-  },
-  {
-    id: '3',
-    title: 'Інтернет магазин для продажу кондиціонерів',
-    image: 'https://ladclimat-service.com.ua/wp-content/uploads/2024/06/2048x898.png',
-    href: 'https://ladclimat-service.com.ua/',
-    githref: 'https://vercel.com/romaleso261981s-projects/snip-v3-front',
-    date: 'September 9, 2022'
-  },
-
-  {
-    id: '4',
-    title: 'Невеличкий лендінг магазин з продажу кави',
-    image: 'https://l-coffee-shop.netlify.app/images/home-img.jpg',
-    href: 'https://l-coffee-shop.netlify.app/',
-    githref: 'https://github.com/Romaleso261981/Coffee-shop',
-    date: 'September 12, 2022'
-  },
-  {
-    id: '5',
-    title: 'Лендінг "Будівелна компанія"',
-    image:
-      'https://chevalierseguin.com/wp-content/uploads/2023/03/expertise_entrepreneur_general_chevalier_seguin-300x300.png',
-    href: 'https://site-wp.netlify.app/',
-    githref: 'https://vercel.com/romaleso261981s-projects/snip-v3-front',
-    date: 'September 9, 2022'
-  },
-  {
-    id: '6',
-    title: 'Просто ще один невелички лендінг на одну сторінку',
-    image: 'https://stunning-strudel-576147.netlify.app/img/main/Bg.jpg',
-    href: 'https://stunning-strudel-576147.netlify.app/',
-    githref: 'https://vercel.com/romaleso261981s-projects/snip-v3-front',
-    date: 'September 12, 2022'
-  },
-  {
-    id: '7',
-    title: 'Просто ще один невелички лендінг на одну сторінку',
-    image: '/Screenshot_1.png',
-    href: 'https://my-own-store.vercel.app/',
-    githref: 'https://vercel.com/romaleso261981s-projects/snip-v3-front',
-    date: 'September 12, 2023'
-  },
-  {
-    id: '8',
     title:
       'СНІП - майстерня солом’яних виробів, у якій надихаємося традиційною культурою для осмислення її у сучасному інтер’єрі',
     image:
@@ -130,7 +80,15 @@ export const ourJobs = [
     date: 'September 12, 2024'
   },
   {
-    id: '9',
+    id: '3',
+    title: 'Інтернет магазин попродажу кованих виробів',
+    image: '/deshevaKovkaBaner.jpg.webp',
+    href: 'https://deshevakovka.vercel.app',
+    githref: 'https://vercel.com/romaleso261981s-projects/deshevakovka',
+    date: 'August 27, 2022'
+  },
+  {
+    id: '4',
     title:
       'Інтернет магазин по продажу та обслуговуванню кондиціонерів. Кондиціонери від офіційного представника в Україні Idea, Midea, Cooper&Hunter, Daikin, Mitsubishi Electric, Panasonic, Haier,  Zanussi, Hitachi, Gree, NeoClima, Sensei',
     image: '/conditioner.jpg',
@@ -138,6 +96,49 @@ export const ourJobs = [
     githref: '',
     date: 'May 02, 2023'
   },
+  {
+    id: '5',
+    title: 'Інтернет магазин для продажу кондиціонерів',
+    image: 'https://ladclimat-service.com.ua/wp-content/uploads/2024/06/2048x898.png',
+    href: 'https://ladclimat-service.com.ua/',
+    githref: 'https://vercel.com/romaleso261981s-projects/snip-v3-front',
+    date: 'September 9, 2022'
+  },
+
+  {
+    id: '6',
+    title: 'Невеличкий лендінг магазин з продажу кави',
+    image: 'https://l-coffee-shop.netlify.app/images/home-img.jpg',
+    href: 'https://l-coffee-shop.netlify.app/',
+    githref: 'https://github.com/Romaleso261981/Coffee-shop',
+    date: 'September 12, 2022'
+  },
+  {
+    id: '7',
+    title: 'Лендінг "Будівелна компанія"',
+    image:
+      'https://chevalierseguin.com/wp-content/uploads/2023/03/expertise_entrepreneur_general_chevalier_seguin-300x300.png',
+    href: 'https://site-wp.netlify.app/',
+    githref: 'https://vercel.com/romaleso261981s-projects/snip-v3-front',
+    date: 'September 9, 2022'
+  },
+  {
+    id: '8',
+    title: 'Просто ще один невелички лендінг на одну сторінку',
+    image: 'https://stunning-strudel-576147.netlify.app/img/main/Bg.jpg',
+    href: 'https://stunning-strudel-576147.netlify.app/',
+    githref: 'https://vercel.com/romaleso261981s-projects/snip-v3-front',
+    date: 'September 12, 2022'
+  },
+  {
+    id: '9',
+    title: 'Просто ще один невелички лендінг на одну сторінку',
+    image: '/Screenshot_1.png',
+    href: 'https://my-own-store.vercel.app/',
+    githref: 'https://vercel.com/romaleso261981s-projects/snip-v3-front',
+    date: 'September 12, 2023'
+  },
+
   {
     id: '10',
     title:
