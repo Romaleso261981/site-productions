@@ -1,4 +1,4 @@
-import { AspectRatio, Button, Center, Flex, Text, Title } from '@mantine/core';
+import { AspectRatio, Button, Flex, Text, Title } from '@mantine/core';
 
 import image from '../../App/access/web-site/websaits-frames.jpg';
 import SocialIcons from '../SocialIcons/SocialIcons';
@@ -26,9 +26,6 @@ export function EmailBanner() {
           Google. Також надамо послугу з налаштування контекстної реклами.
         </Text>
         <Flex className={classes.sendMessageWrapper}>
-          <Center>
-            <Text size="lg">Для замовлення напишіть свій номер мобільного</Text>
-          </Center>
           <Flex className={classes.controls}>
             <Button w={200}>
               <a className={classes.controlLink} href="/order">

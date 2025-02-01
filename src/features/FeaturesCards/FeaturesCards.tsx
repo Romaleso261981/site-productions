@@ -22,7 +22,7 @@ export function FeaturesCards() {
         Лендінг-пейдж ідеально підходить для:
       </Title>
 
-      <SimpleGrid cols={{ base: 1, md: 3 }} spacing="xl" mt={50}>
+      <SimpleGrid cols={{ base: 1, md: 3 }} spacing="xl" my={50}>
         {features}
       </SimpleGrid>
     </Container>
