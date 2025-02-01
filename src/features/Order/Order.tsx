@@ -36,7 +36,6 @@ const countryCodes = [
   { value: '+1', label: 'USA (+1)' },
   { value: '+380', label: 'Ukraine (+380)' },
   { value: '+44', label: 'UK (+44)' }
-  // Додайте інші країни за потреби
 ];
 
 const saveToLocalStorage = (key: string, value: string) => {
@@ -60,31 +59,6 @@ export default function Order() {
   const [countryCode, setCountryCode] = useState<string>(countryCodes[0].value);
   const [emailSuggestions, setEmailSuggestions] = useState<string[]>([]);
   const [phoneSuggestions, setPhoneSuggestions] = useState<string[]>([]);
-
-  // useEffect(() => {
-  //   if (typeof window.gtag === 'function') {
-  //     fetch('http://remontonlineback.up.railway.app/webhook', {
-  //       method: 'POST',
-  //       headers: {
-  //         'Content-Type': 'application/json'
-  //       },
-  //       referrerPolicy: 'unsafe-url'
-  //     })
-  //       .then((response) => response.json())
-  //       .then((result) => {
-  //         console.log('Success:', result);
-  //       })
-  //       .catch((error) => {
-  //         console.error('Error:', error);
-  //       });
-  //     sendMessage('зайшли на сторінку замовлення');
-  //     window.gtag('event', 'conversion', {
-  //       send_to: 'AW-16615527475/7wEbCNWWwbsZELOo8_I9',
-  //       value: '50.0',
-  //       currency: 'UAH'
-  //     });
-  //   }
-  // }, []);
 
   const validateEmail = (email: string) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -116,7 +90,7 @@ export default function Order() {
     }
 
     sendMessage(`email: ${email} phone: ${fullPhoneNumber} message: ${message}`);
-    window.gtag('config', 'AW-16615527475');
+    window.gtag('config', 'AW-16450465969');
     window.dataLayer.push({ event: 'formSubmit' });
 
     saveToLocalStorage('emails', email);
@@ -159,7 +133,7 @@ export default function Order() {
           />
           <Select
             value={countryCode}
-            onChange={(value) => setCountryCode(value!)}
+            onChange={(value) => setCountryCode(value as string)}
             data={countryCodes}
             classNames={{ input: classes.input, root: classes.inputWrapper }}
           />
