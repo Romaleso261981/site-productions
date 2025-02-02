@@ -9,7 +9,7 @@ export function EmailBanner() {
   const handleConversion = () => {
     if (window.gtag) {
       window.gtag('event', 'conversion', {
-        send_to: 'AW-16450465969/nLZzCLSqlJgaEN_d6uE-' // Замініть на свій ID конверсії
+        send_to: 'AW-16450465969/W_ECJ_p8JcaEN_d6uE-16848170719'
       });
       console.log('Конверсія відправлена у Google Ads'); // Для перевірки в консолі
     }
