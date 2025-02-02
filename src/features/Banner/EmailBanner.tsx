@@ -5,6 +5,16 @@ import SocialIcons from '../SocialIcons/SocialIcons';
 import classes from './EmailBanner.module.css';
 
 export function EmailBanner() {
+  // Функція для відстеження конверсії
+  const handleConversion = () => {
+    if (window.gtag) {
+      window.gtag('event', 'conversion', {
+        send_to: 'AW-16450465969/nLZzCLSqlJgaEN_d6uE-' // Замініть на свій ID конверсії
+      });
+      console.log('Конверсія відправлена у Google Ads'); // Для перевірки в консолі
+    }
+  };
+
   return (
     <Flex className={classes.wrapper}>
       <div className={classes.body}>
@@ -22,15 +32,13 @@ export function EmailBanner() {
           підтримку нашим клієнтам.
         </Text>
         <Text fz="sm" c="cyan">
-          Ми можемо надати Вам послуги по SEO просування та оптимізації сайту в пошуковій системі
+          Ми можемо надати Вам послуги по SEO просуванню та оптимізації сайту в пошуковій системі
           Google. Також надамо послугу з налаштування контекстної реклами.
         </Text>
         <Flex className={classes.sendMessageWrapper}>
           <Flex className={classes.controls}>
-            <Button w={200}>
-              <a className={classes.controlLink} href="/order">
-                Замовити
-              </a>
+            <Button w={200} onClick={handleConversion}>
+              Замовити
             </Button>
           </Flex>
         </Flex>
