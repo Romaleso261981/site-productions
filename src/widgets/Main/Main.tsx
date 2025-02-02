@@ -27,7 +27,7 @@ export const Main: FC = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       toggleBaner();
-      toggleIsHiden();
+      // toggleIsHiden();
     }, 5000);
 
     return () => {
