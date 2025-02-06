@@ -34,7 +34,7 @@ export default function TextTruncate({ text, maxLength, href }: TextTruncateProp
       )}
       {href && (
         <div>
-          <a className={s.ancorr} href={href}>
+          <a className={s.ancorr} href={href} target="_blank" rel="noreferrer">
             Перейти
           </a>
         </div>
