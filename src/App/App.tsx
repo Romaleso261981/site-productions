@@ -1,4 +1,5 @@
 import { MantineProvider } from '@mantine/core';
+import { Analytics } from '@vercel/analytics/react';
 import type { FC } from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
@@ -14,6 +15,7 @@ const App: FC = () => {
       <BrowserRouter>
         <MantineProvider theme={myTheme} defaultColorScheme="light">
           <RootRouter />
+          <Analytics />
         </MantineProvider>
       </BrowserRouter>
     </Provider>
