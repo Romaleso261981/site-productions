@@ -24,21 +24,21 @@ export const Main: FC = () => {
     setIsShowCallBaner(!isShowCallBaner);
   };
 
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     toggleBaner();
+  //     // toggleIsHiden();
+  //   }, 5000);
+
+  //   return () => {
+  //     clearTimeout(timer);
+  //   };
+  // }, []);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       toggleBaner();
-      // toggleIsHiden();
     }, 5000);
-
-    return () => {
-      clearTimeout(timer);
-    };
-  }, []);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      toggleBaner();
-    }, 1000);
 
     return () => {
       clearTimeout(timer);
