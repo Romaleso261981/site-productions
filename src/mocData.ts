@@ -157,14 +157,6 @@ export const ourJobs = [
     date: 'September 9, 2022'
   },
   {
-    id: '12',
-    title: 'Portfolio Leso Roman FullStack Developer',
-    image: '/portfolio.png',
-    href: 'https://my-portfolio-flame-nu-85.vercel.app/',
-    githref: 'https://vercel.com/romaleso261981s-projects/my-portfolio',
-    date: 'September 12, 2021'
-  },
-  {
     id: '13',
     title: 'Take goode care of your pets with Petly',
     image: '/petly.png',
