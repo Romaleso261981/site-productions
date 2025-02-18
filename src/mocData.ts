@@ -121,6 +121,15 @@ export const ourJobs = [
     href: 'https://coffee-team-project-owner.vercel.app/',
     githref: 'https://github.com/Romaleso261981/coffee-team-project',
     date: 'May 12, 2024'
+  },
+  {
+    id: '7',
+    title:
+      'Від легкого складання бюджету до аналізу інвестицій у реальному часі, Finwise дає вам можливість контролювати свої гроші, як ніколи раніше',
+    image: 'https://coffee-team-project-owner.vercel.app/img/our-gallery/Image1.png',
+    href: 'https://lending-template.vercel.app/',
+    githref: 'https://github.com/Romaleso261981/lending-template',
+    date: 'May 01, 2025'
   }
 ];
 
