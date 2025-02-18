@@ -97,15 +97,6 @@ export const ourJobs = [
     date: 'May 02, 2023'
   },
   {
-    id: '5',
-    title: 'Інтернет магазин для продажу кондиціонерів',
-    image: 'https://ladclimat-service.com.ua/wp-content/uploads/2024/06/2048x898.png',
-    href: 'https://ladclimat-service.com.ua/',
-    githref: 'https://vercel.com/romaleso261981s-projects/snip-v3-front',
-    date: 'September 9, 2022'
-  },
-
-  {
     id: '6',
     title: 'Невеличкий лендінг магазин з продажу кави',
     image: 'https://l-coffee-shop.netlify.app/images/home-img.jpg',
@@ -114,32 +105,6 @@ export const ourJobs = [
     date: 'September 12, 2022'
   },
   {
-    id: '7',
-    title: 'Лендінг "Будівелна компанія"',
-    image:
-      'https://chevalierseguin.com/wp-content/uploads/2023/03/expertise_entrepreneur_general_chevalier_seguin-300x300.png',
-    href: 'https://site-wp.netlify.app/',
-    githref: 'https://vercel.com/romaleso261981s-projects/snip-v3-front',
-    date: 'September 9, 2022'
-  },
-  {
-    id: '8',
-    title: 'Просто ще один невелички лендінг на одну сторінку',
-    image: 'https://stunning-strudel-576147.netlify.app/img/main/Bg.jpg',
-    href: 'https://stunning-strudel-576147.netlify.app/',
-    githref: 'https://vercel.com/romaleso261981s-projects/snip-v3-front',
-    date: 'September 12, 2022'
-  },
-  {
-    id: '9',
-    title: 'Просто ще один невелички лендінг на одну сторінку',
-    image: '/Screenshot_1.png',
-    href: 'https://my-own-store.vercel.app/',
-    githref: 'https://vercel.com/romaleso261981s-projects/snip-v3-front',
-    date: 'September 12, 2023'
-  },
-
-  {
     id: '10',
     title:
       'Відкрийте для себе світ неперевершених смаків з нашим ексклюзивним асортиментом морозива! У нашому каталозі ви знайдете все: від класичних ванільних насолод до екзотичних фруктових спокус. Кожен наш продукт створюється з любовю та турботою.',
@@ -147,31 +112,6 @@ export const ourJobs = [
     href: 'https://romaleso261981.github.io/ice-cream_project/',
     githref: '',
     date: 'May 02, 2023'
-  },
-  {
-    id: '11',
-    title: 'Інтернет магазин для продажу кондиціонерів',
-    image: 'https://your-holod.kyiv.ua/assets/top_pic-deMLLh09.jpg',
-    href: 'https://your-holod.kyiv.ua/',
-    githref: '',
-    date: 'September 9, 2022'
-  },
-  {
-    id: '13',
-    title: 'Take goode care of your pets with Petly',
-    image: '/petly.png',
-    href: 'https://viacheslav-tykhovlis.github.io/petly-site/',
-    githref: '',
-    date: 'September 12, 2021'
-  },
-  {
-    id: '14',
-    title:
-      'Невеличкий лендінг магазин з продажу кавиФільмотека - це універсальна платформа для справжніх кіноманів! Ваша фільмотека надає можливість зберігати, організовувати та переглядати улюблені фільми в зручному і стильному інтерфейсі. Чи ви шукаєте класичні кінострічки, останні новинки чи незалежне кіно, наша фільмотека задовольнить ваші потреби.',
-    image: '/filmoteka.png',
-    href: 'https://romaleso261981.github.io/filmoteka2021/',
-    githref: '',
-    date: 'September 17, 2021'
   }
 ];
 
