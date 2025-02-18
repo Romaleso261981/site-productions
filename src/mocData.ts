@@ -74,7 +74,7 @@ export const ourJobs = [
     title:
       'СНІП - майстерня солом’яних виробів, у якій надихаємося традиційною культурою для осмислення її у сучасному інтер’єрі',
     image:
-      'https://snip-v3-front.vercel.app/_next/image?url=https%3A%2F%2Fsnip.com.ua%2Fuploads%2FFrame_d2f1a430b5.jpg&w=1920&q=75',
+      'https://snip-v3-front.vercel.app/_next/image?url=https%3A%2F%2Fstrapi-cms-v3-snip.up.railway.app%2Fuploads%2Fimg4_b0379c1c3f.png&w=1920&q=75',
     href: 'https://snip-v3-front.vercel.app/uk',
     githref: 'https://github.com/Romaleso261981/SNIP-V3-front',
     date: 'September 12, 2024'
@@ -97,7 +97,7 @@ export const ourJobs = [
     date: 'May 02, 2023'
   },
   {
-    id: '6',
+    id: '5',
     title: 'Невеличкий лендінг магазин з продажу кави',
     image: 'https://l-coffee-shop.netlify.app/images/home-img.jpg',
     href: 'https://l-coffee-shop.netlify.app/',
@@ -105,13 +105,22 @@ export const ourJobs = [
     date: 'September 12, 2022'
   },
   {
-    id: '10',
+    id: '6',
     title:
       'Відкрийте для себе світ неперевершених смаків з нашим ексклюзивним асортиментом морозива! У нашому каталозі ви знайдете все: від класичних ванільних насолод до екзотичних фруктових спокус. Кожен наш продукт створюється з любовю та турботою.',
     image: '/icecream.png',
     href: 'https://romaleso261981.github.io/ice-cream_project/',
     githref: '',
     date: 'May 02, 2023'
+  },
+  {
+    id: '7',
+    title:
+      'Запрошуємо вас до нашої затишної кав ярні, де кожна чашка кави - це справжнє мистецтво. Насолоджуйтесь ароматом віжозмеленої кави та смаком вишуканих десертів у приємній атмосфері.',
+    image: 'https://coffee-team-project-owner.vercel.app/img/our-gallery/Image1.png',
+    href: 'https://coffee-team-project-owner.vercel.app/',
+    githref: 'https://github.com/Romaleso261981/coffee-team-project',
+    date: 'May 12, 2024'
   }
 ];
 
