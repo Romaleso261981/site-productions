@@ -123,13 +123,22 @@ export const ourJobs = [
     date: 'May 12, 2024'
   },
   {
-    id: '7',
+    id: '8',
     title:
       'Від легкого складання бюджету до аналізу інвестицій у реальному часі, Finwise дає вам можливість контролювати свої гроші, як ніколи раніше',
     image: 'https://coffee-team-project-owner.vercel.app/img/our-gallery/Image1.png',
     href: 'https://lending-template.vercel.app/',
     githref: 'https://github.com/Romaleso261981/lending-template',
     date: 'May 01, 2025'
+  },
+  {
+    id: '9',
+    title:
+      'Магазин породажу товарів для побуту кондиціонери телевізори холодильники пральні машини та інше',
+    image: '/E-shop.png',
+    href: 'https://e-shop-recording-omega.vercel.app/',
+    githref: 'https://github.com/Romaleso261981/e-shop-recording',
+    date: 'Feb 21, 2025'
   }
 ];
 
