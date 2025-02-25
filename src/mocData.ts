@@ -139,6 +139,15 @@ export const ourJobs = [
     href: 'https://e-shop-recording-omega.vercel.app/',
     githref: 'https://github.com/Romaleso261981/e-shop-recording',
     date: 'Feb 21, 2025'
+  },
+  {
+    id: '10',
+    title:
+      'We write markup using the BEM methodology. In development, we use the Sass (SCSS) style preprocessor and actively use adaptive rem units of measurement. We write a lot of JavaScript and implement such components as BurgerButton, Tabs, VideoPlayer, ExpandableContent, InputMask and even a complex custom Select.',
+    image: '/banner.jpg',
+    href: 'https://future-tech-opal.vercel.app/',
+    githref: 'https://github.com/Romaleso261981/Future-tech',
+    date: 'Feb 25, 2025'
   }
 ];
 
