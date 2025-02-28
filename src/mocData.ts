@@ -148,6 +148,14 @@ export const ourJobs = [
     href: 'https://site-productions.vercel.app/',
     githref: 'https://github.com/Romaleso261981/my-store-iron-gates',
     date: 'August 18, 2022'
+  },
+  {
+    id: '11',
+    title: 'Лендінг по надання послуг по ремонту та обслуговуванню техніки',
+    image: 'https://free-css-com-pyx5.vercel.app/images/slider-img.png',
+    href: 'https://free-css-com-pyx5.vercel.app/',
+    githref: 'https://github.com/Romaleso261981/free-css-com',
+    date: 'Feb 28, 2025'
   }
 ];
 
