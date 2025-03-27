@@ -75,7 +75,7 @@ export const ourJobs = [
     title:
       'СНІП - майстерня солом’яних виробів, у якій надихаємося традиційною культурою для осмислення її у сучасному інтер’єрі',
     image:
-      'https://snip-v3-front.vercel.app/_next/image?url=https%3A%2F%2Fstrapi-cms-v3-snip.up.railway.app%2Fuploads%2Fimg4_b0379c1c3f.png&w=1920&q=75',
+      'https://snip-v3-front.vercel.app/_next/image?url=https%3A%2F%2Fintuitive-spontaneity-snip.up.railway.app%2Fuploads%2FFrame_5_4e46b15395.png&w=750&q=75',
     href: 'https://snip-v3-front.vercel.app/uk',
     githref: 'https://github.com/Romaleso261981/SNIP-V3-front',
     date: 'September 12, 2024'
